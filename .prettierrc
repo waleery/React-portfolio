@@ -1,6 +1,6 @@
 {
-    "trialingComma": "es5",
-    "tavWidth": 2,
-    "semi": false,
-    "singleQuote": true
+   "trialingComma": "es5",
+   "tabWidth": 4,
+   "semi": false,
+   "singleQuote": true
 }
