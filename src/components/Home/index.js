@@ -1,7 +1,7 @@
 import LogoTitle from '../../assets/images/logo-s.png'
 import { Link } from 'react-router-dom'
 import './index.scss'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -24,6 +24,13 @@ const Home = () => {
         'r',
         '.',
     ]
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 4000)
+    }, [])
+
     return (
         <div className="container home-page">
             <div className="text-zone">
