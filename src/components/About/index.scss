@@ -1,5 +1,5 @@
 .stage-cube-cont {
-    border: 1px solid rgb(0, 255, 174);
+    //border: 1px solid rgb(0, 255, 174);
     will-change: contents;
 
     width: 50%;
@@ -7,12 +7,10 @@
     position: absolute;
     right: 0px;
     margin-right: 0px;
-    bottom:0;
-    top:0;
+    bottom: 0;
+    top: 0;
     overflow: hidden;
     //margin-right: 1px;
-    
-
 
     .cubespinner {
         position: absolute;
@@ -23,12 +21,10 @@
         transform-style: preserve-3d;
         transform-origin: 100px 100px 0;
         margin-left: calc(50% - 100px);
-        margin-top:  - 100px;
+        margin-top: -100px;
 
-        top:50%;
-        
+        top: 50%;
 
-                
         div {
             position: absolute;
             height: 200px;
