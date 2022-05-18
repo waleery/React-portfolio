@@ -3,7 +3,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
-import { faL } from '@fortawesome/free-solid-svg-icons'
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -35,7 +35,7 @@ const Contact = () => {
     }
 
     return (
-        <div>
+        <>
             <div className="container contact-page">
                 <div className="text-zone">
                     <h1>
@@ -57,7 +57,7 @@ const Contact = () => {
                         />
                     </h1>
                     <p>
-                        I am interested in freelance opportunities - especially
+                        I am interested in an internship - especially
                         ambitious or large projects. However, if you have other
                         request or question, don't hesitate to contact me using
                         below form either.
@@ -108,8 +108,25 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            {/* //<Loader type="pacman" /> */}
-        </div>
+            <div className='info-map'>
+                Patryk Walendziuk,
+                <br/>
+                Poland,
+                <br/>
+                Bialystok
+                <span>p.k.walendziuk@gmail.com</span>
+
+            </div>
+            <div className='map-wrap'>
+                <MapContainer center={[53.13212150415938, 23.16846514114768]} zoom={13}>
+                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                    <Marker position={[53.13212150415938, 23.16846514114768]}>
+                        <Popup>Hey, I live here :)</Popup>
+                    </Marker>
+                </MapContainer>
+            </div>
+            <Loader type="pacman" />
+        </>
     )
 }
 
