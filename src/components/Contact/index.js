@@ -26,7 +26,7 @@ const Contact = () => {
         ).then(
             () => {
                 alert('Message successfully sent!')
-                window.location.href = "https://waleery.github.io/React-portfolio/"
+                window.location.reload(true);
             },
             () => {
                 alert('Failed to send, try again')
