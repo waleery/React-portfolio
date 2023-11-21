@@ -57,20 +57,8 @@
     }
 
     .flat-button {
-        color: #ffd700;
-        background: 0 0;
-        font-size: 11px;
-        letter-spacing: 3px;
-        text-decoration: none;
-        padding: 8px 10px;
-        border: 1px solid #ffd700;
-        border-radius: 4px;
         float: right;
 
-        &:hover {
-            background: #ffd700;
-            color: #333;
-        }
     }
 }
 

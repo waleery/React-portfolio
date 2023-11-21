@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import SendMailButton from '../SendMailButton'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -99,11 +100,9 @@ const Contact = () => {
                                     ></textarea>
                                 </li>
                                 <li>
-                                    <input
-                                        type="submit"
-                                        className="flat-button"
-                                        value="SEND"
-                                    />
+                                    <div className="flat-button">
+                                        <SendMailButton type="submit" />
+                                    </div>
                                 </li>
                             </ul>
                         </form>
