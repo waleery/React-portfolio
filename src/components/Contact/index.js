@@ -60,10 +60,10 @@ const Contact = () => {
                         />
                     </h1>
                     <p>
-                        I am interested in an internship - especially ambitious
-                        or large projects. However, if you have other request or
-                        question, don't hesitate to contact me using below form
-                        either.
+                        Actively searching for full-time job opportunities,
+                        particularly in ambitious or large projects. If you have
+                        any other requests or questions, feel free to reach out
+                        using the form below.
                     </p>
                     <div className="contact-form">
                         <form ref={refForm} onSubmit={sendEmail}>
