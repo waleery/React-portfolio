@@ -132,7 +132,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <Loader type="pacman" />
+            {/* <Loader type="pacman" /> */}
         </>
     )
 }

@@ -33,6 +33,7 @@
     display: flex;
     align-items: center;
 
+    animation: fadeIn 1.5s forwards;
 
     h1 {
         font-size: 53px;
@@ -67,7 +68,7 @@
         }
     }
     p {
-        font-size: 13px;
+        font-size: 14px;
         color: white;
         font-family: sans-serif;
         font-weight: 300;
@@ -109,7 +110,7 @@
                 font-size: 30px;
             }
             h2 {
-                font-size: 13px;
+                font-size: 11px;
             }
         }
     }
