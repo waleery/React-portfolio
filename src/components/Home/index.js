@@ -16,7 +16,7 @@ const Home = () => {
         'w',
         'e',
         'b',
-        ' ',
+        '',
         'd',
         'e',
         'v',
@@ -37,7 +37,7 @@ const Home = () => {
 
     return (
         <>
-        <div className="container home-page">
+        <div className="home-page">
             <div className="text-zone">
                 <h1>
                     <AnimatedLetters

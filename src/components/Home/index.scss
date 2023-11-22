@@ -1,19 +1,10 @@
 .home-page{
-    
     .text-zone{
-        position: absolute;
-        //margin-left: 30px;
-        left: 6%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
-        z-index: 1;
+        width: 50%;
     }
     
     h1{
         color: #fff;
-
         font-size: 53px;
         margin: 0;
         font-family: 'Coolvetica';
@@ -37,7 +28,7 @@
             font-size: 18px;
             position: absolute;
             margin-top: 18px;
-            margin-left: 20px;
+            margin-left: 18px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
         }
