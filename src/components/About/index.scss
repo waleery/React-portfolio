@@ -85,7 +85,6 @@
             margin-top: -200px;
             transform-origin: 75px 75px 0;
 
-    
             div {
                 //position: absolute;
                 height: 150px;
@@ -97,9 +96,8 @@
                 justify-content: center;
                 align-items: center;
                 box-shadow: 0 0 20px 0px lightyellow;
-
             }
-    
+
             .face1 {
                 transform: translateZ(75px);
             }
@@ -131,7 +129,6 @@
             margin-top: -100px;
             transform-origin: 50px 50px 0;
 
-    
             div {
                 //position: absolute;
                 height: 100px;
@@ -143,9 +140,8 @@
                 justify-content: center;
                 align-items: center;
                 box-shadow: 0 0 20px 0px lightyellow;
-
             }
-    
+
             .face1 {
                 transform: translateZ(50px);
             }
@@ -164,6 +160,14 @@
             .face6 {
                 transform: rotateX(-90deg) translateZ(50px);
             }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .stage-cube-cont {
+        .cubespinner {
+            margin-top: -70px;
         }
     }
 }
