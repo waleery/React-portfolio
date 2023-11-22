@@ -4,7 +4,7 @@ const AnimatedLetters = ({ letterClass, strArray, idx }) => {
     return (
         <span>
             {strArray.map((char, i) => {
-                if (char === '') {
+                if (char == '' || char === ' ') {
                     return(
                         <span
                             key={char + i}
