@@ -94,11 +94,12 @@
 
         transform: translate(-100%, -100%);
 
-        span {
+        a {
             font-size: 16px;
             display: block;
-            padding-top: 20px;
+            padding-top: 10px;
             color: #ffd700;
+            text-decoration: none;
         }
     }
 }
@@ -134,7 +135,7 @@
             animation: fadeIn 2s 2s;
             animation-fill-mode: forwards;
 
-            span {
+            a {
                 font-size: 13px;
             }
         }

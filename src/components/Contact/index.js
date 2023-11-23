@@ -127,7 +127,7 @@ const Contact = () => {
                         Poland,
                         <br />
                         Bialystok
-                        <span>p.k.walendziuk@gmail.com</span>
+                        <a href='mailto:p.k.walendziuk@gmail.com'>p.k.walendziuk@gmail.com</a>
                     </div>
                 </div>
             </div>
