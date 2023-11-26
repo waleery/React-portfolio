@@ -5,32 +5,12 @@
 
     h1 {
         color: #fff;
-        font-size: 53px;
         margin: 0;
         font-family: 'Coolvetica';
-        font-weight: 400;
         min-width: 400px;
 
-        &::before {
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            color: #ffd700;
-            font-size: 18px;
-            position: absolute;
-            margin-top: -30px;
-            left: -15px;
-            opacity: 0.6;
-        }
         &::after {
-            content: '</h1>';
-            font-family: 'La Belle Aurore';
-            color: #ffd700;
-            font-size: 18px;
-            position: absolute;
-            margin-top: 18px;
-            margin-left: 18px;
             animation: fadeIn 1s 1.7s backwards;
-            opacity: 0.6;
         }
 
         img {

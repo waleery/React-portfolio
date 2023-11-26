@@ -38,7 +38,7 @@
         border: 0;
         background: #115173;
         height: 50px;
-        font-size: 13.5px;
+        font-size: 14px;
         color: #fff;
         padding: 0 20px;
         box-sizing: border-box;
@@ -50,7 +50,7 @@
         background: #115173;
         height: 50px;
         max-height: 250px;
-        font-size: 13.5px;
+        font-size: 14px;
         color: #fff;
         padding: 20px;
         min-height: 150px;
@@ -67,12 +67,6 @@
     height: 100%;
     width: 70%;
     position: block;
-    //background: rgba(8,253,216,0.1);
-    //width: ;
-    //height: 100%;
-    //overflow: hidden;
-    //position: absolute;
-    //clear:both ;
 
     .info-map {
         border: 1px solid #ffd700;
@@ -113,78 +107,41 @@
     animation-fill-mode: forwards;
 }
 
+@media screen and (max-width: 1200px) {
+
+    .contact-form {
+
+        ul {
+            li {
+                margin-bottom: 8px;
+            }
+        }
+
+        input[type='text'],
+        input[type='email'] {
+            height: 35px;
+        }
+
+        textarea {
+            height: 40px;
+            min-height: 100px;
+        }
+    }
+}
+
 @media screen and (max-width: 700px) {
     .map-wrap {
         height: 350px;
         width: 100%;
 
         .info-map {
-            border: 1px solid #ffd700;
-
-            background-color: #000;
             width: 160px;
             padding: 5px;
-            color: #fff;
-            font-family: 'Helvetica';
             font-size: 13px;
 
             a {
                 font-size: 13px;
             }
-        }
-    }
-
-    .contact-form {
-
-        ul {
-            li {
-                padding: 0;
-                margin: 0;
-                list-style: none;
-                margin-bottom: 8px;
-                overflow: hidden;
-                display: block;
-                position: relative;
-                opacity: 0;
-                animation: fadeInUp 2s 2s;
-                animation-fill-mode: forwards;
-                clear: both;
-            }
-
-            li.half {
-                width: 49%;
-                margin-left: 2%;
-                float: left;
-                clear: none;
-
-                &:first-child {
-                    margin-left: 0;
-                }
-            }
-        }
-
-        input[type='text'],
-        input[type='email'] {
-            width: 100%;
-            border: 0;
-            background: #115173;
-            height: 35px;
-            font-size: 14px;
-            columns: #fff;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
-
-        textarea {
-            width: 100%;
-            border: 0;
-            background: #115173;
-            height: 40px;
-            font-size: 14px;
-            columns: #fff;
-            padding: 20px;
-            min-height: 100px;
-            box-sizing: border-box;
         }
     }
 }
