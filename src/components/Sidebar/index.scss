@@ -76,8 +76,12 @@
         }
         a.about-link {
             &::after {
-                //transform: translate(-25%);
                 content: 'ABOUT';
+            }
+        }
+        a.projects-link {
+            &::after {
+                content: 'PROJECTS';
             }
         }
 
@@ -150,6 +154,11 @@
             a {
                 margin: 0 3px;
                 width: 35px;
+            }
+            a.projects-link {
+                &::after {
+                    margin-left: -10px;
+                }
             }
         }
 
