@@ -1,0 +1,37 @@
+.projects-page {   
+
+    .text-zone {
+        min-width: 20%
+    }
+    .timeline-zone {
+
+        border-left: 1px solid red;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow-y: auto;
+
+        .vertical-timeline-element:first-child{
+        }
+    }
+    .timeline-zone::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .timeline-zone::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #022c43;
+        //border: 1px solid #cacaca;
+    }
+    
+    .timeline-zone::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background-color: #ffd700;
+    }
+
+    
+}

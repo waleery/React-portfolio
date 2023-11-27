@@ -3,7 +3,7 @@
     height: 100%;
     position: absolute;
     margin-left: 60px;
-    overflow-y: auto;
+    overflow-y: hidden;
 
 
     .tags {
@@ -36,7 +36,6 @@
     align-items: center;
 
     animation: fadeIn 1.5s forwards;
-    border: 1px solid red;
 
     h1 {
         font-size: 53px;
@@ -155,6 +154,9 @@
                 font-size: 13px;
             }
         }
+    }
+    .contact-page{
+        overflow-y: auto;
     }
 
     
