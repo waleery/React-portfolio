@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-portfolio/static/css/main.2b21d823.css",
-    "main.js": "/React-portfolio/static/js/main.be80a633.js",
+    "main.js": "/React-portfolio/static/js/main.2fa3525b.js",
     "static/js/787.a2cb61a6.chunk.js": "/React-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/t-matic.png": "/React-portfolio/static/media/t-matic.df6df2180b5ef111e811.png",
     "static/media/helvetica-neu.ttf": "/React-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
@@ -12,11 +12,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/React-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/React-portfolio/index.html",
     "main.2b21d823.css.map": "/React-portfolio/static/css/main.2b21d823.css.map",
-    "main.be80a633.js.map": "/React-portfolio/static/js/main.be80a633.js.map",
+    "main.2fa3525b.js.map": "/React-portfolio/static/js/main.2fa3525b.js.map",
     "787.a2cb61a6.chunk.js.map": "/React-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b21d823.css",
-    "static/js/main.be80a633.js"
+    "static/js/main.2fa3525b.js"
   ]
 }
