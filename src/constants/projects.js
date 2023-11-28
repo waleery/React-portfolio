@@ -4,11 +4,11 @@ import tMatic from "../assets/images/t-matic.png"
 
 export const experiences = [
     {
-      title: "Web Developer",
+      title: "Web Developer - React",
       secondaryText: "Junior",
       icon: tMatic,
       iconBg: "#ececec",
-      date: "Dec 2022 - Current",
+      date: "Dec 2022 - Present",
       points: [
         "Integrated and displayed time-tracking data from the Registration of Work Hours successfully, enhancing the system's functionality and contributing to improved workflow efficiency.",
         "Boosted efficiency by introducing advanced filters, reducing document search time by 35% and empowering users to swiftly locate relevant information.",
