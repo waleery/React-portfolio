@@ -9,7 +9,7 @@ import './index.scss'
 const ExperienceCard = ({ experience }) => {
     return (
         <VerticalTimelineElement
-            contentStyle={{ background: 'lightgray', color: '#fff' }}
+            contentStyle={{ background: '#16445d', color: '#fff' }}
             contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             date={experience.date}
             iconStyle={{ background: experience.iconBg }}
@@ -17,17 +17,17 @@ const ExperienceCard = ({ experience }) => {
                 <div className="card-icon">
                     <img
                         src={experience.icon}
-                        alt={experience.company_name}
+                        alt={experience.title}
                     />
                 </div>
             }
         >
             <div className='card-experience'>
-
+                <h3>{experience.title}</h3>
                 <p
                     className="text-secondary"
                 >
-                    {experience.company_name}
+                    {experience.secondaryText}
                 </p>
             </div>
             <ul className='experience-list'>

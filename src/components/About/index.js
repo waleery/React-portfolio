@@ -1,6 +1,6 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faCss3,
@@ -12,8 +12,32 @@ import {
     faNode,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
+import { FaChevronDown } from 'react-icons/fa6'
+
+import { VerticalTimeline } from 'react-vertical-timeline-component'
+import ExperienceCard from '../ExperienceCard'
+import { experiences } from '../../constants/projects'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const [showScrollIndicator, setShowScrollIndicator] = useState(true)
+    const { width } = useWindowDimensions()
+
+    const timelineRef = useRef(null)
+    useEffect(() => {
+        const handleScroll = () => {
+            if (showScrollIndicator) {
+                setShowScrollIndicator((prev) => !prev)
+                timelineRef.current.removeEventListener('scroll', handleScroll)
+            }
+        }
+
+        timelineRef?.current.addEventListener('scroll', handleScroll)
+
+        return () => {
+            timelineRef?.current?.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
 
     useEffect(() => {
         setTimeout(() => {
@@ -23,7 +47,7 @@ const About = () => {
 
     return (
         <>
-            <div className="about-page">
+            <div className="about-page" ref={timelineRef}>
                 <div className="text-zone">
                     <h1>
                         <AnimatedLetters
@@ -48,8 +72,37 @@ const About = () => {
                         and totally obsessed with technology!
                     </p>
                 </div>
+                <div className="time-line">
+                    <VerticalTimeline
+                        lineColor={'yellow'}
+                        layout={width < 1650 ? '1-column-right' : '2-columns'}
+                    >
+                        {experiences.map((experience, index) => (
+                            <ExperienceCard
+                                key={index}
+                                experience={experience}
+                            />
+                        ))}
+                    </VerticalTimeline>
+                    {width < 900 && (
+                        <div
+                            className="show-scroll-indicator"
+                            style={
+                                !showScrollIndicator
+                                    ? {
+                                          opacity: 0,
+                                          transition:
+                                              'opacity 0.5s ease-in-out',
+                                      }
+                                    : null
+                            }
+                        >
+                            <FaChevronDown />
+                        </div>
+                    )}
+                </div>
 
-                <div className="stage-cube-cont">
+                {/* <div className="stage-cube-cont">
                     <div className="center">X</div>
                     <div className="cubespinner">
                         <div className="face1">
@@ -74,7 +127,7 @@ const About = () => {
                             <FontAwesomeIcon icon={faGitAlt} color="#EC4D2A" />
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
             {/* <Loader type="pacman" /> */}
         </>

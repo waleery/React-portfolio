@@ -29,13 +29,13 @@ const Projects = () => {
                     />
                 </h1>
             </div>
-            <div className="timeline-zone">
+            {/* <div className="timeline-zone">
                 <VerticalTimeline>
                     {experiences.map((experience, index) => (
                         <ExperienceCard key={index} experience={experience} />
                     ))}
                 </VerticalTimeline>
-            </div>
+            </div> */}
         </div>
     )
 }
