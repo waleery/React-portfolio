@@ -21,7 +21,7 @@ import useWindowDimensions from '../../hooks/useWindowDimensions'
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const [showScrollIndicator, setShowScrollIndicator] = useState(true)
-    const { width } = useWindowDimensions()
+    const { width, height } = useWindowDimensions()
 
     const timelineRef = useRef(null)
     useEffect(() => {
@@ -75,7 +75,7 @@ const About = () => {
                 <div className="time-line">
                     <VerticalTimeline
                         lineColor={'yellow'}
-                        layout={width < 1650 ? '1-column-right' : '2-columns'}
+                        layout={width < 1650 || height < 950 ? '1-column-right' : '2-columns'}
                     >
                         {experiences.map((experience, index) => (
                             <ExperienceCard

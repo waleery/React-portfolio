@@ -47,6 +47,18 @@
     font-family: sans-serif;
     font-weight: 200;
 }
+
+@media screen and (max-height: 900px) {
+    .card-experience {
+        h3 {
+            font-size: 17px;
+        }
+        .text-secondary {
+            margin-top: -18px;
+            font-size: 14px;
+        }
+    }
+}
 @media screen and (max-width: 900px) {
     .card-experience {
         h3 {
