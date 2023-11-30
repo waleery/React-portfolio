@@ -1,22 +1,23 @@
 .projects-page {   
 
     .text-zone {
-        min-width: 20%
+        min-width: 20%;
+        width: 50%;
     }
     .timeline-zone {
 
-        border-left: 1px solid red;
-        min-height: 100%;
+        border: 1px solid red;
+        //min-height: 100%;
         width: 100%;
-        height: 100%;
+        height: 80%;
         display: flex;
-        align-items: center;
+        //align-items: center;
         justify-content: center;
-        flex-direction: column;
+        //flex-direction: column;
+        flex-wrap: wrap;
+        gap:20px;
         overflow-y: auto;
-
-        .vertical-timeline-element:first-child{
-        }
+        
     }
     .timeline-zone::-webkit-scrollbar {
         width: 5px;

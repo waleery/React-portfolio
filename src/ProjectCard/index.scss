@@ -1,0 +1,42 @@
+.project-card {
+    position: relative;
+    border: 1px solid green;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    min-height: 35vh;
+    width: 35vh;
+    margin: 10px;
+    border-radius: 1rem;
+    aspect-ratio: inherit;
+    flex-wrap: wrap;
+
+    .project-img {
+        //max-height: 50%;
+        height: 100%;
+
+        img {
+            object-fit: scale-down;
+            max-width: 100%;
+            //aspect-ratio: 1;
+            height: 100%;
+            //max-height: min-content;
+            border-radius: 1rem 1rem 0 0;
+        }
+    }
+    .first-side {
+        border: 1px solid red;
+        min-height: 100%;
+        transition: transform 0.5s; /* Dodaje płynne przejście dla animacji */
+        .project-desc {
+            padding: 0 1vh;
+        }
+    }
+
+    background-color: #16445d;
+}
+.first-side:hover {
+    transform: translate(-40px);
+    transform: rotateY(180deg);
+}

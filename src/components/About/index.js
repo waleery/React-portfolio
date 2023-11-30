@@ -16,7 +16,7 @@ import { FaChevronDown } from 'react-icons/fa6'
 
 import { VerticalTimeline } from 'react-vertical-timeline-component'
 import ExperienceCard from '../ExperienceCard'
-import { experiences } from '../../constants/projects'
+import { experiences } from '../../constants/experience'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')

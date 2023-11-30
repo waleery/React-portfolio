@@ -7,7 +7,8 @@ import {
 } from 'react-vertical-timeline-component'
 import AnimatedLetters from '../AnimatedLetters'
 import ExperienceCard from '../ExperienceCard'
-import { experiences } from '../../constants/projects'
+import { projects } from '../../constants/projects'
+import ProjectCard from '../../ProjectCard'
 
 const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -29,13 +30,11 @@ const Projects = () => {
                     />
                 </h1>
             </div>
-            {/* <div className="timeline-zone">
-                <VerticalTimeline>
-                    {experiences.map((experience, index) => (
-                        <ExperienceCard key={index} experience={experience} />
-                    ))}
-                </VerticalTimeline>
-            </div> */}
+            <div className="timeline-zone">
+            {projects.map((project, i) => (
+                <ProjectCard project={project} />
+            ))}
+            </div>
         </div>
     )
 }
