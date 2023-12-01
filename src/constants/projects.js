@@ -7,33 +7,32 @@ export const projects = [
         seconadryText: 'App to visualise binary tree',
         image: BST,
         functionality: [
-            'sdsdsdsd',
-            'dsfsdf',
-            'sdsdsdfsdfsdsd',
-            'sqwddsdasdvqwsdsd',
-            'axaxsdsdsdsd',
-            'xxxxxsdsdsdsd',
+            'Adding value',
+            'Finding path',
+            'Balance tree',
+            'Resposive desing',
+            'Validation'
         ],
         techStack: [
             { technology: 'React', color: '#fffew', icon: '' },
             { technology: 'Scss', color: 'pink', icon: '' },
+            { technology: 'React D3 Tree', color: 'pink', icon: '' },
         ],
     },
     {
-        title: 'Binary Search Tree qwadfwq',
-        seconadryText: 'App to visualise binary tree qwfdwqf',
+        title: 'E-commerce store',
+        seconadryText: 'Shop with electronics',
         image: eCommerce,
         functionality: [
-            'sdsdsdsd',
-            'dsfsdf',
-            'sdsdsdfsdfsdsd',
-            'sqwddsdasdvqwsdsd',
-            'axaxsdsdsdsd',
-            'xxxxxsdsdsdsd',
+            'Managing database',
+            'Stripe payments',
+            'Resposive desing',
+
         ],
         techStack: [
-            { technology: 'React', color: '#fffew', icon: '' },
-            { technology: 'Scss', color: 'pink', icon: '' },
+            { technology: 'Next.js', color: '#fffew', icon: '' },
+            { technology: 'Stripe', color: 'pink', icon: '' },
+            { technology: 'Sanity.io', color: 'pink', icon: '' },
         ],
     },
     {

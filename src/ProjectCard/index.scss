@@ -36,7 +36,8 @@
 
     background-color: #16445d;
 }
-.first-side:hover {
-    transform: translate(-40px);
-    transform: rotateY(180deg);
+.project-card:hover {
+    .first-side {
+        transform: rotateY(180deg);
+    }
 }
