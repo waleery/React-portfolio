@@ -1,5 +1,6 @@
 import BST from "../assets/images/BST.png"
 import eCommerce from "../assets/images/eCommerce.png"
+import nextJs from "../assets/images/technoloies_logos/nextJs.png"
 
 export const projects = [
     {
@@ -14,8 +15,8 @@ export const projects = [
             'Validation'
         ],
         techStack: [
-            { technology: 'React', color: '#fffew', icon: '' },
-            { technology: 'Scss', color: 'pink', icon: '' },
+            { technology: 'React', color: '#61DBFB', icon: '' },
+            { technology: 'Sass', color: '#CD6799', icon: '' },
             { technology: 'React D3 Tree', color: 'pink', icon: '' },
         ],
     },
@@ -30,8 +31,10 @@ export const projects = [
 
         ],
         techStack: [
-            { technology: 'Next.js', color: '#fffew', icon: '' },
-            { technology: 'Stripe', color: 'pink', icon: '' },
+            { technology: 'Next.js', color: 'black', icon: nextJs },
+            { technology: 'Sass', color: '#CD6799', icon: '' },
+            { technology: 'Stripe', color: 'white', icon: '' },
+            { technology: 'Sanity.io', color: 'pink', icon: '' },
             { technology: 'Sanity.io', color: 'pink', icon: '' },
         ],
     },
@@ -48,8 +51,25 @@ export const projects = [
             'xxxxxsdsdsdsd',
         ],
         techStack: [
-            { technology: 'React', color: '#fffew', icon: '' },
-            { technology: 'Scss', color: 'pink', icon: '' },
+            { technology: 'React', color: '#61DBFB', icon: '' },
+            { technology: 'Sass', color: '#CD6799', icon: '' },
+        ],
+    },
+    {
+        title: 'Binary Search Tree qwadfwq',
+        seconadryText: 'App to visualise binary tree qwfdwqf',
+        image: eCommerce,
+        functionality: [
+            'sdsdsdsd',
+            'dsfsdf',
+            'sdsdsdfsdfsdsd',
+            'sqwddsdasdvqwsdsd',
+            'axaxsdsdsdsd',
+            'xxxxxsdsdsdsd',
+        ],
+        techStack: [
+            { technology: 'React', color: '#61DBFB', icon: '' },
+            { technology: 'Sass', color: '#CD6799', icon: '' },
         ],
     },
     {

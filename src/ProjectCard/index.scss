@@ -1,43 +1,92 @@
 .project-card {
     position: relative;
-    border: 1px solid green;
     color: white;
     display: flex;
     flex-direction: column;
-    height: fit-content;
-    min-height: 35vh;
+
+    height: 35vh;
     width: 35vh;
+
+    min-height: 300px;
+    min-width: 300px;
+
     margin: 10px;
-    border-radius: 1rem;
-    aspect-ratio: inherit;
-    flex-wrap: wrap;
 
     .project-img {
-        //max-height: 50%;
-        height: 100%;
+        flex: 1;
 
         img {
-            object-fit: scale-down;
             max-width: 100%;
-            //aspect-ratio: 1;
             height: 100%;
-            //max-height: min-content;
             border-radius: 1rem 1rem 0 0;
         }
     }
-    .first-side {
-        border: 1px solid red;
-        min-height: 100%;
-        transition: transform 0.5s; /* Dodaje płynne przejście dla animacji */
-        .project-desc {
-            padding: 0 1vh;
+    .project-text {
+
+        flex: 1;
+        position: relative;
+
+        .first-side {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: transform 0.5s;
+
+            background-color: #16445d;
+            backface-visibility: hidden;
+
+            .project-desc {
+                padding: 0 1vh;
+                flex: 3;
+            }
+
+            .project-technologies {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                row-gap: 5px;
+                padding-bottom: 5px;
+
+
+                .project-technology {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 25px;
+                    font-weight: 450;
+                    font-size: 16px;
+                    padding: 2px;
+                    margin: 0 10px;
+                    border-radius: 15px;
+                    
+                    img {
+                        margin-right: 5px;
+                        max-height: 80%;
+                        //aspect-ratio: 1;
+                        //object-fit: contain;
+                    }
+                }
+            }
+
+        }
+
+        .second-side {
+            transform: rotateY(180deg);
+            position: absolute;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            transition: transform 0.5s;
+            background-color: #16445d;
+            backface-visibility: hidden;
         }
     }
-
-    background-color: #16445d;
 }
 .project-card:hover {
     .first-side {
         transform: rotateY(180deg);
+    }
+    .second-side {
+        transform: rotateY(0deg);
     }
 }
