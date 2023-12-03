@@ -35,7 +35,7 @@ const ProjectCard = ({ project }) => {
                             ))}
                         </div>
                         <button
-                            className="more-info"
+                            className="change-side"
                             onClick={() => {
                                 ref.current.className += " active"
                             }}
@@ -50,6 +50,14 @@ const ProjectCard = ({ project }) => {
                             <li>{item}</li>
                         ))}
                     </ul>
+                    <button
+                            className="change-side back"
+                            onClick={() => {
+                                ref.current.className += "project-card"
+                            }}
+                        >
+                            <IoMdMore />
+                        </button>
                 </div>
             </div>
         </div>
