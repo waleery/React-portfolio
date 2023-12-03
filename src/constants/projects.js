@@ -19,6 +19,7 @@ export const projects = [
             { technology: 'Sass', color: '#CD6799', icon: '' },
             { technology: 'React D3 Tree', color: 'pink', icon: '' },
         ],
+        gitHub:'https://github.com/waleery/BinarySearchTreeReact'
     },
     {
         title: 'E-commerce store',

@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from 'react'
 import './index.scss'
-import { IoMdMore } from 'react-icons/io'
+import { IoMdMore, IoIosArrowBack, IoLogoGithub } from 'react-icons/io'
 
 const ProjectCard = ({ project }) => {
     let ref = useRef(null)
 
     useEffect(() => {
         console.log(ref)
-    }, [ref]);
+    }, [ref])
     return (
         <div className="project-card" ref={ref}>
             <div className="project-img">
@@ -16,6 +16,11 @@ const ProjectCard = ({ project }) => {
             <div className="project-text">
                 <div className="first-side">
                     <div className="project-desc">
+                        {project.gitHub && (
+                            <a href={project.gitHub} target="_blank">
+                                <IoLogoGithub />
+                            </a>
+                        )}
                         <h2>{project.title}</h2>
                         <h3>{project.seconadryText}</h3>
                     </div>
@@ -37,7 +42,7 @@ const ProjectCard = ({ project }) => {
                         <button
                             className="change-side"
                             onClick={() => {
-                                ref.current.className += " active"
+                                ref.current.className += ' active'
                             }}
                         >
                             <IoMdMore />
@@ -51,13 +56,13 @@ const ProjectCard = ({ project }) => {
                         ))}
                     </ul>
                     <button
-                            className="change-side back"
-                            onClick={() => {
-                                ref.current.className += "project-card"
-                            }}
-                        >
-                            <IoMdMore />
-                        </button>
+                        className="change-side back"
+                        onClick={() => {
+                            ref.current.className = 'project-card'
+                        }}
+                    >
+                        <IoIosArrowBack />
+                    </button>
                 </div>
             </div>
         </div>
