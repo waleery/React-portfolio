@@ -19,7 +19,8 @@ export const projects = [
             { technology: 'Sass', color: '#CD6799', icon: '' },
             { technology: 'React D3 Tree', color: 'pink', icon: '' },
         ],
-        gitHub:'https://github.com/waleery/BinarySearchTreeReact'
+        gitHub:'https://github.com/waleery/BinarySearchTreeReact',
+        liveDemo:'https://waleery.github.io/BinarySearchTreeReact/',
     },
     {
         title: 'E-commerce store',
@@ -32,12 +33,15 @@ export const projects = [
 
         ],
         techStack: [
-            { technology: 'Next.js', color: 'black', icon: nextJs },
+            { technology: 'Next.js', color: 'black', icon: '' },
             { technology: 'Sass', color: '#CD6799', icon: '' },
-            { technology: 'Stripe', color: 'white', icon: '' },
-            { technology: 'Sanity.io', color: 'pink', icon: '' },
-            { technology: 'Sanity.io', color: 'pink', icon: '' },
+            { technology: 'Stripe', color: 'rgb(98, 91, 249)', icon: '' },
+            { technology: 'Sanity.io', color: 'rgb(230, 110, 93)', icon: '' },
+            { technology: 'Sanity.io', color: 'rgb(230, 110, 93)', icon: '' },
         ],
+        gitHub:'https://github.com/waleery/eCommerce',
+        liveDemo:'https://e-commerce-zeta-sepia.vercel.app/',
+
     },
     {
         title: 'Binary Search Tree',

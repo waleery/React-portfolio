@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './index.scss'
 import { IoMdMore, IoIosArrowBack, IoLogoGithub } from 'react-icons/io'
+import { IoPlayCircleOutline } from 'react-icons/io5'
 
 const ProjectCard = ({ project }) => {
     let ref = useRef(null)
@@ -16,10 +17,19 @@ const ProjectCard = ({ project }) => {
             <div className="project-text">
                 <div className="first-side">
                     <div className="project-desc">
-                        {project.gitHub && (
-                            <a href={project.gitHub} target="_blank">
-                                <IoLogoGithub />
-                            </a>
+                        {(project.gitHub || project.liveDemo) && (
+                            <div className="github-demo">
+                                {project.gitHub && (
+                                    <a href={project.gitHub} target="_blank" title="GitHub repository">
+                                        <IoLogoGithub />
+                                    </a>
+                                )}
+                                {project.liveDemo && (
+                                    <a href={project.liveDemo} target="_blank" title="Live demo">
+                                        <IoPlayCircleOutline />
+                                    </a>
+                                )}
+                            </div>
                         )}
                         <h2>{project.title}</h2>
                         <h3>{project.seconadryText}</h3>
@@ -31,7 +41,7 @@ const ProjectCard = ({ project }) => {
                                     className="project-technology"
                                     style={{
                                         color: item.color,
-                                        textShadow: `${item.color} 0px 0px 14px, ${item.color} 0px 0px 10px, ${item.color} 0px 0px 5px`,
+                                        textShadow: item.color === 'black' ? `${item.color} 0px 0px 0.5px, ${item.color} 0px 0px 50px, ${item.color} 0px 0px 10px` : `${item.color} 0px 0px 14px, ${item.color} 0px 0px 10px, ${item.color} 0px 0px 5px`,
                                     }}
                                 >
                                     <img src={item.icon} />
