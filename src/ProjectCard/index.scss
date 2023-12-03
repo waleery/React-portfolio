@@ -22,7 +22,6 @@
         }
     }
     .project-text {
-
         flex: 1;
         position: relative;
 
@@ -39,35 +38,53 @@
                 padding: 0 1vh;
                 flex: 3;
             }
-
-            .project-technologies {
+            .bottom-card {
                 display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                row-gap: 5px;
-                padding-bottom: 5px;
+                align-items: end;
+                justify-content: space-between;
+
+                .project-technologies {
 
 
-                .project-technology {
                     display: flex;
+                    flex-wrap: wrap;
                     align-items: center;
-                    justify-content: center;
-                    height: 25px;
-                    font-weight: 450;
-                    font-size: 16px;
-                    padding: 2px;
-                    margin: 0 10px;
-                    border-radius: 15px;
-                    
-                    img {
-                        margin-right: 5px;
-                        max-height: 80%;
-                        //aspect-ratio: 1;
-                        //object-fit: contain;
+                    row-gap: 5px;
+                    padding-bottom: 5px;
+
+                    .project-technology {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 25px;
+                        font-weight: 450;
+                        font-size: 16px;
+                        padding: 2px;
+                        margin: 0 10px;
+                        border-radius: 15px;
+
+                        img {
+                            margin-right: 5px;
+                            max-height: 80%;
+                            //aspect-ratio: 1;
+                            //object-fit: contain;
+                        }
                     }
                 }
-            }
+                .more-info{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
+                    background-color: transparent;
+                    border: none;
+                    color: white;
+                    height:fit-content;
+                    font-size: 25px;
+                    padding-bottom: 5px;
+                    cursor: pointer;
+                }
+            }
         }
 
         .second-side {
@@ -82,7 +99,7 @@
         }
     }
 }
-.project-card:hover {
+.project-card.active {
     .first-side {
         transform: rotateY(180deg);
     }

@@ -3,7 +3,7 @@ import './index.scss'
 
 const SendMailButton = () => {
     return (
-        <button>
+        <button className='send-mail'>
             <span className="backdrop">
                 <span className="action"></span>
             </span>
