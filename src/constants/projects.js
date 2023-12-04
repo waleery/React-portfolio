@@ -71,6 +71,8 @@ export const projects = [
             'sqwddsdasdvqwsdsd',
             'axaxsdsdsdsd',
             'xxxxxsdsdsdsd',
+            'xxxxxsdsdsdsd',
+            'xxxxxsdsdsdsd',
         ],
         techStack: [
             { technology: 'React', color: '#61DBFB', icon: '' },

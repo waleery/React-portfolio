@@ -30,7 +30,7 @@ const Projects = () => {
                     />
                 </h1>
             </div>
-            <div className="timeline-zone">
+            <div className="projects-zone">
             {projects.map((project, i) => (
                 <ProjectCard project={project} />
             ))}

@@ -20,12 +20,20 @@ const ProjectCard = ({ project }) => {
                         {(project.gitHub || project.liveDemo) && (
                             <div className="github-demo">
                                 {project.gitHub && (
-                                    <a href={project.gitHub} target="_blank" title="GitHub repository">
+                                    <a
+                                        href={project.gitHub}
+                                        target="_blank"
+                                        title="GitHub repository"
+                                    >
                                         <IoLogoGithub />
                                     </a>
                                 )}
                                 {project.liveDemo && (
-                                    <a href={project.liveDemo} target="_blank" title="Live demo">
+                                    <a
+                                        href={project.liveDemo}
+                                        target="_blank"
+                                        title="Live demo"
+                                    >
                                         <IoPlayCircleOutline />
                                     </a>
                                 )}
@@ -41,7 +49,10 @@ const ProjectCard = ({ project }) => {
                                     className="project-technology"
                                     style={{
                                         color: item.color,
-                                        textShadow: item.color === 'black' ? `${item.color} 0px 0px 0.5px, ${item.color} 0px 0px 50px, ${item.color} 0px 0px 10px` : `${item.color} 0px 0px 14px, ${item.color} 0px 0px 10px, ${item.color} 0px 0px 5px`,
+                                        textShadow:
+                                            item.color === 'black'
+                                                ? `${item.color} 0px 0px 0.5px, ${item.color} 0px 0px 50px, ${item.color} 0px 0px 10px`
+                                                : `${item.color} 0px 0px 14px, ${item.color} 0px 0px 10px, ${item.color} 0px 0px 5px`,
                                     }}
                                 >
                                     <img src={item.icon} />
@@ -60,19 +71,22 @@ const ProjectCard = ({ project }) => {
                     </div>
                 </div>
                 <div className="second-side">
-                    <ul>
-                        {project.functionality.map((item, i) => (
-                            <li>{item}</li>
-                        ))}
-                    </ul>
-                    <button
-                        className="change-side back"
-                        onClick={() => {
-                            ref.current.className = 'project-card'
-                        }}
-                    >
-                        <IoIosArrowBack />
-                    </button>
+                    <h2>Features</h2>
+                    <div className='list-wrapper'>
+                        <ul>
+                            {project.functionality.map((item, i) => (
+                                <li>{item}</li>
+                            ))}
+                        </ul>
+                        <button
+                            className="change-side back"
+                            onClick={() => {
+                                ref.current.className = 'project-card'
+                            }}
+                        >
+                            <IoIosArrowBack />
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
