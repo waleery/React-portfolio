@@ -86,10 +86,7 @@ export const projects = [
         functionality: [
             'sdsdsdsd',
             'dsfsdf',
-            'sdsdsdfsdfsdsd',
-            'sqwddsdasdvqwsdsd',
-            'axaxsdsdsdsd',
-            'xxxxxsdsdsdsd',
+
         ],
         techStack: [
             { technology: 'React', color: '#fffew', icon: '' },
