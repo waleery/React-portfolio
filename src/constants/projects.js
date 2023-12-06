@@ -37,7 +37,6 @@ export const projects = [
             { technology: 'Sass', color: '#CD6799', icon: '' },
             { technology: 'Stripe', color: 'rgb(98, 91, 249)', icon: '' },
             { technology: 'Sanity.io', color: 'rgb(230, 110, 93)', icon: '' },
-            { technology: 'Sanity.io', color: 'rgb(230, 110, 93)', icon: '' },
         ],
         gitHub:'https://github.com/waleery/eCommerce',
         liveDemo:'https://e-commerce-zeta-sepia.vercel.app/',
