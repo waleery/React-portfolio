@@ -12,7 +12,7 @@ import ProjectCard from '../../ProjectCard'
 
 const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const overviewArray = ['O', 'v', 'e', 'r', 'v', 'i', 'e', 'w']
+    const overviewArray = ['P', 'r', 'o', 'j', 'e', 'c', 't', 's']
 
     useEffect(() => {
         setTimeout(() => {
