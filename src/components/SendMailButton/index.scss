@@ -82,12 +82,12 @@
     }
 }
 
-button:focus-visible {
+.send-mail:focus-visible {
     outline-offset: 0.5em;
     outline-color: hsl(280 80% 80% / 0.5);
 }
 
-button:is(:hover, :focus-visible) svg path:nth-of-type(2) {
+.send-mail:is(:hover, :focus-visible) svg path:nth-of-type(2) {
     translate: 0 -50%;
     rotate: 290deg;
     scale: 0.65;
@@ -96,10 +96,10 @@ button:is(:hover, :focus-visible) svg path:nth-of-type(2) {
     transition-timing-function: ease, ease, cubic-bezier(0.2, 0.7, 0.9, 1.5);
 }
 
-button:is(:hover, :focus-visible) svg path:nth-of-type(1) {
+.send-mail:is(:hover, :focus-visible) svg path:nth-of-type(1) {
     translate: 0 0;
 }
 
-button:is(:hover, :focus-visible) .action {
+.send-mail:is(:hover, :focus-visible) .action {
     width: 100%;
 }
