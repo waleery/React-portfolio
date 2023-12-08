@@ -8,6 +8,7 @@
     height: 300px;
 
     margin: 10px;
+    
  
     .project-img {
         flex: 1;
@@ -204,10 +205,10 @@
 }
 
 @media screen and (max-width: 900px) {
-    .project-card{
+    // .project-card{
     
-        height: 220px;
-        width: 220px;
-    }
+    //     height: 220px;
+    //     width: 220px;
+    // }
     
 }

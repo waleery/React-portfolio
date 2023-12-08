@@ -1,17 +1,6 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useRef, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-    faCss3,
-    faGitAlt,
-    faHtml5,
-    faJava,
-    faJsSquare,
-    faReact,
-    faNode,
-} from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
 import { FaChevronDown } from 'react-icons/fa6'
 
 import { VerticalTimeline } from 'react-vertical-timeline-component'
@@ -75,7 +64,11 @@ const About = () => {
                 <div className="time-line">
                     <VerticalTimeline
                         lineColor={'yellow'}
-                        layout={width < 1650 || height < 950 ? '1-column-right' : '2-columns'}
+                        layout={
+                            width < 1650 || height < 950
+                                ? '1-column-right'
+                                : '2-columns'
+                        }
                     >
                         {experiences.map((experience, index) => (
                             <ExperienceCard
@@ -101,33 +94,6 @@ const About = () => {
                         </div>
                     )}
                 </div>
-
-                {/* <div className="stage-cube-cont">
-                    <div className="center">X</div>
-                    <div className="cubespinner">
-                        <div className="face1">
-                            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-                        </div>
-                        <div className="face2">
-                            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-                        </div>
-                        <div className="face3">
-                            <FontAwesomeIcon
-                                icon={faJsSquare}
-                                color="#EFD81D"
-                            />
-                        </div>
-                        <div className="face4">
-                            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-                        </div>
-                        <div className="face5">
-                            <FontAwesomeIcon icon={faNode} color="#215732" />
-                        </div>
-                        <div className="face6">
-                            <FontAwesomeIcon icon={faGitAlt} color="#EC4D2A" />
-                        </div>
-                    </div>
-                </div> */}
             </div>
             {/* <Loader type="pacman" /> */}
         </>

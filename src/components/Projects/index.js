@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './index.scss'
-
-import {
-    VerticalTimeline,
-    VerticalTimelineElement,
-} from 'react-vertical-timeline-component'
 import AnimatedLetters from '../AnimatedLetters'
-import ExperienceCard from '../ExperienceCard'
 import { projects } from '../../constants/projects'
-import ProjectCard from '../../ProjectCard'
+import ProjectCard from '../ProjectCard'
+import Cube from '../Cube'
 
 const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -29,6 +24,7 @@ const Projects = () => {
                         idx={1}
                     />
                 </h1>
+                <Cube/>
             </div>
             <div className="projects-zone">
             {projects.map((project, i) => (

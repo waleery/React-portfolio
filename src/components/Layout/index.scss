@@ -110,7 +110,8 @@
 
 @media screen and (max-width: 1200px) {
     .about-page,
-    .contact-page {
+    .contact-page,
+    .projects-page {
         .text-zone {
             margin: 50px 7.5% 50px 7.5%;
 
@@ -179,9 +180,9 @@
                 font-size: 13px;
             }
         }
-        .projects-zone{
-            height:65% !important;
-        }
+        // .projects-zone{
+        //     //height:65% !important;
+        // }
     }
     .time-line {
         margin: 0 7.5% 10% 7.5%;
