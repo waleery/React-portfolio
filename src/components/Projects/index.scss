@@ -23,20 +23,9 @@
         overflow-y: auto;
         margin-bottom: 30px;
     }
-    .projects-zone::-webkit-scrollbar {
-        width: 3px;
-    }
-
-    .projects-zone::-webkit-scrollbar-track {
-        border-radius: 10px;
-        background-color: #16445d;
-    }
-
-    .projects-zone::-webkit-scrollbar-thumb {
-        border-radius: 8px;
-        background-color: #ffd700;
-    }
 }
+
+
 
 @media screen and (max-width: 900px) {
     .projects-page {

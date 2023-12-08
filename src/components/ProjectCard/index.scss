@@ -149,20 +149,6 @@
         transform: rotateY(0deg);
     }
 }
-.second-side::-webkit-scrollbar {
-    width: 3px;
-}
-
-.second-side::-webkit-scrollbar-track{
-    border-radius: 10px;
-    background-color: #16445d ;
-    //border: 1px solid #cacaca;
-}
-
-.second-side::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    background-color: #ffd700;
-}
 
 @media screen and (max-width: 1200px) {
     .project-card{
