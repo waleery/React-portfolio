@@ -9,22 +9,39 @@ import { experiences } from '../../constants/experience'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const [showScrollIndicator, setShowScrollIndicator] = useState(true)
+    const [showScrollIndicator, setShowScrollIndicator] = useState(false)
+    
     const { width, height } = useWindowDimensions()
+    
+    const userScrolled = useRef(false);
+    const aboutPageRef = useRef(null)
 
-    const timelineRef = useRef(null)
     useEffect(() => {
-        const handleScroll = () => {
-            if (showScrollIndicator) {
-                setShowScrollIndicator((prev) => !prev)
-                timelineRef.current.removeEventListener('scroll', handleScroll)
+        const checkOverflow = () => {
+
+            const hasOverflowingChildren = aboutPageRef.current.offsetHeight < aboutPageRef.current.scrollHeight ||
+                                           aboutPageRef.current.offsetWidth < aboutPageRef.current.scrollWidth
+
+            if (!userScrolled.current) {
+                setShowScrollIndicator(hasOverflowingChildren)
             }
         }
 
-        timelineRef?.current.addEventListener('scroll', handleScroll)
+        const handleScroll = () => {
+            setShowScrollIndicator((prev) => !prev)
+            userScrolled.current = true;
+
+            aboutPageRef.current.removeEventListener('scroll', handleScroll)
+        }
+
+        aboutPageRef?.current.addEventListener('scroll', handleScroll)
+        window.addEventListener('resize', checkOverflow)
+
+        checkOverflow() //inital check
 
         return () => {
-            timelineRef?.current?.removeEventListener('scroll', handleScroll)
+            aboutPageRef?.current?.removeEventListener('scroll', handleScroll)
+            window.removeEventListener('resize', checkOverflow)
         }
     }, [])
 
@@ -36,7 +53,7 @@ const About = () => {
 
     return (
         <>
-            <div className="about-page" ref={timelineRef}>
+            <div className="about-page" ref={aboutPageRef}>
                 <div className="text-zone">
                     <h1>
                         <AnimatedLetters
@@ -77,22 +94,19 @@ const About = () => {
                             />
                         ))}
                     </VerticalTimeline>
-                    {width < 900 && (
-                        <div
-                            className="show-scroll-indicator"
-                            style={
-                                !showScrollIndicator
-                                    ? {
-                                          opacity: 0,
-                                          transition:
-                                              'opacity 0.5s ease-in-out',
-                                      }
-                                    : null
-                            }
-                        >
-                            <FaChevronDown />
-                        </div>
-                    )}
+                    <div
+                        className="show-scroll-indicator"
+                        style={
+                            !showScrollIndicator
+                                ? {
+                                      opacity: 0,
+                                      transition: 'opacity 0.5s ease-in-out',
+                                  }
+                                : null
+                        }
+                    >
+                        <FaChevronDown />
+                    </div>
                 </div>
             </div>
             {/* <Loader type="pacman" /> */}
