@@ -4,9 +4,13 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        height: 60%;
+        justify-content: space-around;
 
         h1{
-            min-width: fit-content
+            min-width: fit-content;
+            margin-bottom: 0;
         }
 
         .stage-cube-cont {
@@ -34,6 +38,7 @@
             height: auto;
         }
         .text-zone {
+            height:fit-content;
             min-width: 20%;
             width: 100%;
             display: flex;
