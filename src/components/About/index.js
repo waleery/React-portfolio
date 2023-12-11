@@ -7,43 +7,17 @@ import { VerticalTimeline } from 'react-vertical-timeline-component'
 import ExperienceCard from '../ExperienceCard'
 import { experiences } from '../../constants/experience'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
+import useShowScrollIndicator from '../../hooks/useShowScrollIndicator'
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const [showScrollIndicator, setShowScrollIndicator] = useState(false)
+    //const [showScrollIndicator, setShowScrollIndicator] = useState(false)
     
     const { width, height } = useWindowDimensions()
     
     const userScrolled = useRef(false);
     const aboutPageRef = useRef(null)
 
-    useEffect(() => {
-        const checkOverflow = () => {
-
-            const hasOverflowingChildren = aboutPageRef.current.offsetHeight < aboutPageRef.current.scrollHeight ||
-                                           aboutPageRef.current.offsetWidth < aboutPageRef.current.scrollWidth
-
-            if (!userScrolled.current) {
-                setShowScrollIndicator(hasOverflowingChildren)
-            }
-        }
-
-        const handleScroll = () => {
-            setShowScrollIndicator((prev) => !prev)
-            userScrolled.current = true;
-
-            aboutPageRef.current.removeEventListener('scroll', handleScroll)
-        }
-
-        aboutPageRef?.current.addEventListener('scroll', handleScroll)
-        window.addEventListener('resize', checkOverflow)
-
-        checkOverflow() //inital check
-
-        return () => {
-            aboutPageRef?.current?.removeEventListener('scroll', handleScroll)
-            window.removeEventListener('resize', checkOverflow)
-        }
-    }, [])
+    const showScrollIndicator = useShowScrollIndicator(aboutPageRef, userScrolled)
 
     useEffect(() => {
         setTimeout(() => {
