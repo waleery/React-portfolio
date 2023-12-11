@@ -67,7 +67,7 @@ const Projects = () => {
             </div>
             <div className="projects-zone" ref={projectsZoneRef}>
                 {projects.map((project, i) => (
-                    <ProjectCard project={project} />
+                    <ProjectCard project={project} key={i}/>
                 ))}
                 <div
                     className="show-scroll-indicator"
