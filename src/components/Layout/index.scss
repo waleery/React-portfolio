@@ -191,7 +191,8 @@
     }
     
     .projects-page{
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 }
 @media screen and (max-width: 500px) {
