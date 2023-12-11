@@ -5,48 +5,26 @@ import { projects } from '../../constants/projects'
 import ProjectCard from '../ProjectCard'
 import Cube from '../Cube'
 import { FaChevronDown } from 'react-icons/fa6'
+import useShowScrollIndicator from '../../hooks/useShowScrollIndicator'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 
 const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const overviewArray = ['P', 'r', 'o', 'j', 'e', 'c', 't', 's']
 
-    const [showScrollIndicator, setShowScrollIndicator] = useState(false)
     const projectsZoneRef = useRef(null)
+    const projectsPageRef = useRef(null)
     const userScrolled = useRef(false)
 
-    useEffect(() => {
-        const checkOverflow = () => {
-            const hasOverflowingChildren =
-                projectsZoneRef.current.offsetHeight <
-                    projectsZoneRef.current.scrollHeight ||
-                projectsZoneRef.current.offsetWidth <
-                    projectsZoneRef.current.scrollWidth
-
-            if (!userScrolled.current) {
-                setShowScrollIndicator(hasOverflowingChildren)
-            }
-        }
-
-        const handleScroll = () => {
-            setShowScrollIndicator((prev) => !prev)
-            userScrolled.current = true
-
-            projectsZoneRef.current.removeEventListener('scroll', handleScroll)
-        }
-
-        projectsZoneRef?.current.addEventListener('scroll', handleScroll)
-        window.addEventListener('resize', checkOverflow)
-
-        checkOverflow() //inital check
-
-        return () => {
-            projectsZoneRef?.current?.removeEventListener(
-                'scroll',
-                handleScroll
-            )
-            window.removeEventListener('resize', checkOverflow)
-        }
-    }, [])
+    const showScrollIndicatorAtProjectSection = useShowScrollIndicator(
+        projectsZoneRef,
+        userScrolled
+    )
+    const showScrollIndicatorAtProjectsPage = useShowScrollIndicator(
+        projectsPageRef,
+        userScrolled
+    )
+    const { width } = useWindowDimensions()
 
     useEffect(() => {
         setTimeout(() => {
@@ -54,7 +32,7 @@ const Projects = () => {
         }, 4000)
     }, [])
     return (
-        <div className="projects-page">
+        <div className="projects-page" ref={projectsPageRef}>
             <div className="text-zone">
                 <h1>
                     <AnimatedLetters
@@ -67,21 +45,34 @@ const Projects = () => {
             </div>
             <div className="projects-zone" ref={projectsZoneRef}>
                 {projects.map((project, i) => (
-                    <ProjectCard project={project} key={i}/>
+                    <ProjectCard project={project} key={i} />
                 ))}
                 <div
                     className="show-scroll-indicator"
                     style={
-                        !showScrollIndicator
+                        !showScrollIndicatorAtProjectSection
                             ? {
                                   opacity: 0,
-                                  transition: 'opacity 0.5s ease-in-out',
                               }
                             : null
                     }
                 >
                     <FaChevronDown />
                 </div>
+            </div>
+            <div
+                className="show-scroll-indicator"
+                style={{
+                    left: '50%',
+                    transform: 'translate(-50%)',
+                    ...(!showScrollIndicatorAtProjectsPage
+                        && {
+                              opacity: 0,
+                          }),
+                    ...(width > 900 && {display:'none', opacity:0}),
+                }}
+            >
+                <FaChevronDown />
             </div>
         </div>
     )
