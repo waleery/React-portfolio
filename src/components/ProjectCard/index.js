@@ -4,11 +4,8 @@ import { IoMdMore, IoIosArrowBack, IoLogoGithub } from 'react-icons/io'
 import { IoPlayCircleOutline } from 'react-icons/io5'
 
 const ProjectCard = ({ project }) => {
-    let ref = useRef(null)
+    const ref = useRef(null)
 
-    useEffect(() => {
-        console.log(ref)
-    }, [ref])
     return (
         <div className="project-card" ref={ref}>
             <div className="project-img">
@@ -54,6 +51,7 @@ const ProjectCard = ({ project }) => {
                                                 ? `${item.color} 0px 0px 0.5px, ${item.color} 0px 0px 50px, ${item.color} 0px 0px 10px`
                                                 : `${item.color} 0px 0px 14px, ${item.color} 0px 0px 10px, ${item.color} 0px 0px 5px`,
                                     }}
+                                    key={i}
                                 >
                                     <img src={item.icon} />
                                     {item.technology}
@@ -75,7 +73,7 @@ const ProjectCard = ({ project }) => {
                     <div className='list-wrapper'>
                         <ul>
                             {project.functionality.map((item, i) => (
-                                <li>{item}</li>
+                                <li key={i}>{item}</li>
                             ))}
                         </ul>
                         <button
