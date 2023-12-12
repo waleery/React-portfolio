@@ -34,7 +34,7 @@
             backface-visibility: hidden;
 
             .project-desc {
-                padding: 0 1vh;
+                padding: 0 35px 0 1vh;
                 flex: 3;
 
 
@@ -126,7 +126,9 @@
                 justify-content: space-between;
 
                 li{
-                    font-size: 11px;
+                    font-size: 12px;
+                    font-weight: 350;
+                    max-width: 200px;
                 }
                 
                 .back{
@@ -153,8 +155,8 @@
 @media screen and (max-width: 1200px) {
     .project-card{
     
-        height: 250px;
-        width: 250px;
+        height: 270px;
+        width: 270px;
 
         .project-desc {
             h2{

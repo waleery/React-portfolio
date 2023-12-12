@@ -1,6 +1,6 @@
 import BST from "../assets/images/BST.png"
 import eCommerce from "../assets/images/eCommerce.png"
-import nextJs from "../assets/images/technoloies_logos/nextJs.png"
+import WordleClone from "../assets/images/WordleClone.png"
 
 export const projects = [
     {
@@ -12,7 +12,8 @@ export const projects = [
             'Finding path',
             'Balance tree',
             'Resposive desing',
-            'Validation'
+            'Validation',
+            'Dark theme'
         ],
         techStack: [
             { technology: 'React', color: '#61DBFB', icon: '' },
@@ -27,7 +28,7 @@ export const projects = [
         seconadryText: 'Shop with electronics',
         image: eCommerce,
         functionality: [
-            'Managing database',
+            'Easy product management through Sanity.io',
             'Stripe payments',
             'Resposive desing',
 
@@ -43,53 +44,53 @@ export const projects = [
 
     },
     {
-        title: 'Binary Search Tree',
-        seconadryText: 'App to visualise binary tree',
-        image: BST,
+        title: 'Wordle Clone',
+        seconadryText: 'Wordle is a five-letter word guessing game with hints on letter positions.',
+        image: WordleClone,
         functionality: [
-            'sdsdsdsd',
-            'dsfsdf',
-            'sdsdsdfsdfsdsd',
-            'sqwddsdasdvqwsdsd',
-            'axaxsdsdsdsd',
-            'xxxxxsdsdsdsd',
+            'Word validation',
+            'Base diferent words to guess',
+            'Information about win/lose',
+            'Hints in the form of colored letters',
         ],
         techStack: [
             { technology: 'React', color: '#61DBFB', icon: '' },
-            { technology: 'Sass', color: '#CD6799', icon: '' },
+            { technology: 'JSON Server', color: 'white', icon: '' },
         ],
+        gitHub:'https://github.com/waleery/Wordle_Clone_React',
+        liveDemo:'https://waleery.github.io/Wordle_Clone_React'
     },
-    {
-        title: 'Binary Search Tree qwadfwq',
-        seconadryText: 'App to visualise binary tree qwfdwqf',
-        image: eCommerce,
-        functionality: [
-            'sdsdsdsd',
-            'dsfsdf',
-            'sdsdsdfsdfsdsd',
-            'sqwddsdasdvqwsdsd',
-            'axaxsdsdsdsd',
-            'xxxxxsdsdsdsd',
-            'xxxxxsdsdsdsd',
-            'xxxxxsdsdsdsd',
-        ],
-        techStack: [
-            { technology: 'React', color: '#61DBFB', icon: '' },
-            { technology: 'Sass', color: '#CD6799', icon: '' },
-        ],
-    },
-    {
-        title: 'Binary Search Tree qwadfwq',
-        seconadryText: 'App to visualise binary tree qwfdwqf',
-        image: eCommerce,
-        functionality: [
-            'sdsdsdsd',
-            'dsfsdf',
+    // {
+    //     title: 'Binary Search Tree qwadfwq',
+    //     seconadryText: 'App to visualise binary tree qwfdwqf',
+    //     image: eCommerce,
+    //     functionality: [
+    //         'sdsdsdsd',
+    //         'dsfsdf',
+    //         'sdsdsdfsdfsdsd',
+    //         'sqwddsdasdvqwsdsd',
+    //         'axaxsdsdsdsd',
+    //         'xxxxxsdsdsdsd',
+    //         'xxxxxsdsdsdsd',
+    //         'xxxxxsdsdsdsd',
+    //     ],
+    //     techStack: [
+    //         { technology: 'React', color: '#61DBFB', icon: '' },
+    //         { technology: 'Sass', color: '#CD6799', icon: '' },
+    //     ],
+    // },
+    // {
+    //     title: 'Binary Search Tree qwadfwq',
+    //     seconadryText: 'App to visualise binary tree qwfdwqf',
+    //     image: eCommerce,
+    //     functionality: [
+    //         'sdsdsdsd',
+    //         'dsfsdf',
 
-        ],
-        techStack: [
-            { technology: 'React', color: '#fffew', icon: '' },
-            { technology: 'Scss', color: 'pink', icon: '' },
-        ],
-    },
+    //     ],
+    //     techStack: [
+    //         { technology: 'React', color: '#fffew', icon: '' },
+    //         { technology: 'Scss', color: 'pink', icon: '' },
+    //     ],
+    // },
 ]
