@@ -146,6 +146,42 @@
     }
 }
 
+@media screen and (max-width: 650px) {
+    .stage-cube-cont {
+        transform: translate(-50px);
+
+        .cubespinner {
+            margin-top: -100px;
+            transform-origin: 50px 50px 0;
+
+            div {
+                height: 100px;
+                width: 100px;
+                font-size: 55px;
+            }
+
+            .face1 {
+                transform: translateZ(50px);
+            }
+            .face2 {
+                transform: rotateY(90deg) translateZ(50px);
+            }
+            .face3 {
+                transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
+            }
+            .face4 {
+                transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+            }
+            .face5 {
+                transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
+            }
+            .face6 {
+                transform: rotateX(-90deg) translateZ(50px);
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 450px) {
     .stage-cube-cont {
         transform: translate(-40px, 10px);

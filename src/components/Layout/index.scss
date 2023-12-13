@@ -194,6 +194,14 @@
         overflow-y: auto;
         overflow-x: hidden;
     }
+
+    .projects-page{
+        .text-zone{
+            h1{
+                font-size: 30px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 500px) {
     .page {
@@ -201,5 +209,15 @@
         height: calc(100% - 60px);
         margin-top: 60px;
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .projects-page{
+        .text-zone{
+            h1{
+                font-size: 24px;
+            }
+        }
     }
 }
