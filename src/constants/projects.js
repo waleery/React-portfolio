@@ -1,6 +1,7 @@
 import BST from "../assets/images/BST.png"
 import eCommerce from "../assets/images/eCommerce.png"
 import WordleClone from "../assets/images/WordleClone.png"
+import ATM_Console from "../assets/images/ATM_Console.png"
 
 export const projects = [
     {
@@ -60,25 +61,24 @@ export const projects = [
         gitHub:'https://github.com/waleery/Wordle_Clone_React',
         liveDemo:'https://waleery.github.io/Wordle_Clone_React'
     },
-    // {
-    //     title: 'Binary Search Tree qwadfwq',
-    //     seconadryText: 'App to visualise binary tree qwfdwqf',
-    //     image: eCommerce,
-    //     functionality: [
-    //         'sdsdsdsd',
-    //         'dsfsdf',
-    //         'sdsdsdfsdfsdsd',
-    //         'sqwddsdasdvqwsdsd',
-    //         'axaxsdsdsdsd',
-    //         'xxxxxsdsdsdsd',
-    //         'xxxxxsdsdsdsd',
-    //         'xxxxxsdsdsdsd',
-    //     ],
-    //     techStack: [
-    //         { technology: 'React', color: '#61DBFB', icon: '' },
-    //         { technology: 'Sass', color: '#CD6799', icon: '' },
-    //     ],
-    // },
+    {
+        title: 'ATM Console Simulator',
+        seconadryText: 'An application that simulates the operation of an ATM machine',
+        image: ATM_Console,
+        functionality: [
+            'Logging in by card number and PIN',
+            'Checking account balance',
+            'Deposit of money',
+            'Withdrawing money',
+            'Validation of withdrawing money',
+            'Money transfer',
+            'Tansactions history',
+        ],
+        techStack: [
+            { technology: 'C#', color: '#A179DC', icon: '' },
+        ],
+        gitHub:'https://github.com/waleery/ATM_Console_Simulator'
+    },
     // {
     //     title: 'Binary Search Tree qwadfwq',
     //     seconadryText: 'App to visualise binary tree qwfdwqf',
