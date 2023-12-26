@@ -57,6 +57,7 @@
         .projects-zone {
             overflow: hidden;
             height: auto;
+            max-height: unset;
         }
         .text-zone {
             height: fit-content;
