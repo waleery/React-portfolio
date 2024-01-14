@@ -10,6 +10,18 @@ const ProjectCard = ({ project }) => {
         <div className="project-card" ref={ref}>
             <div className="project-img">
                 <img src={project.image} />
+                {project.inProgress && (
+                    <>
+                        <div className="red-white-line">
+                            <span>IN PROGRESS</span>
+                            <span>IN PROGRESS</span>
+                        </div>
+                        <div className="red-white-line second">
+                            <span>IN PROGRESS</span>
+                            <span>IN PROGRESS</span>
+                        </div>
+                    </>
+                )}
             </div>
             <div className="project-text">
                 <div className="first-side">
@@ -47,7 +59,7 @@ const ProjectCard = ({ project }) => {
                                     style={{
                                         color: item.color,
                                         textShadow:
-                                            item.color === 'black'
+                                            item.color === 'black' || item.color === '#230068'
                                                 ? `${item.color} 0px 0px 0.5px, ${item.color} 0px 0px 50px, ${item.color} 0px 0px 10px`
                                                 : `${item.color} 0px 0px 14px, ${item.color} 0px 0px 10px, ${item.color} 0px 0px 5px`,
                                     }}
@@ -69,8 +81,8 @@ const ProjectCard = ({ project }) => {
                     </div>
                 </div>
                 <div className="second-side">
-                    <h2>Features</h2>
-                    <div className='list-wrapper'>
+                    <h2>Features {project.inProgress && "(so far)"}</h2>
+                    <div className="list-wrapper">
                         <ul>
                             {project.functionality.map((item, i) => (
                                 <li key={i}>{item}</li>

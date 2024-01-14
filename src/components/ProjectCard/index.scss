@@ -8,8 +8,7 @@
     height: 300px;
 
     margin: 10px;
-    
- 
+
     .project-img {
         flex: 1;
         position: relative;
@@ -22,7 +21,6 @@
             border-radius: 1rem 1rem 0 0;
             //aspect-ratio: 3/1.1;
             //object-fit: cover;
-            
         }
     }
     .project-text {
@@ -43,24 +41,22 @@
                 padding: 0 35px 0 1vh;
                 flex: 3;
 
-
-                .github-demo{
-                    position:absolute;
+                .github-demo {
+                    position: absolute;
                     font-size: 30px;
                     margin: 5px;
                     right: 0;
                     display: flex;
                     flex-direction: column;
 
-                    a{
-                        color:white;
+                    a {
+                        color: white;
                     }
 
-                    a:visited{
-                        color:inherit
+                    a:visited {
+                        color: inherit;
                     }
                 }
-                
             }
             .bottom-card {
                 display: flex;
@@ -122,26 +118,25 @@
             overflow: auto;
 
             border-radius: 0 0 5px 5px;
-           
-            h2{
+
+            h2 {
                 margin-left: 2vh;
                 margin-bottom: 0;
-
             }
-            .list-wrapper{
+            .list-wrapper {
                 position: relative;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
 
-                li{
+                li {
                     font-size: 12px;
                     font-weight: 350;
                     max-width: 200px;
                 }
-                
-                .back{
+
+                .back {
                     position: relative;
                     bottom: 0;
                     margin-left: auto;
@@ -149,7 +144,6 @@
                     //transform: translate(-100%);
                 }
             }
-
         }
     }
 }
@@ -162,21 +156,56 @@
     }
 }
 
+.in-progress {
+    opacity: 50%;
+}
+
+.red-white-line {
+    position: absolute;
+    height: 20px;
+    width: 120%;
+    background: repeating-linear-gradient(
+        -45deg,
+        red,
+        red 10px,
+        white 10px,
+        white 20px
+    );
+    opacity: 80%;
+    transform: translateY(60px) translateX(-30px) rotate(25deg);
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    span{
+        color: black;
+        font-size: medium;
+        font-weight: 500;
+        opacity: unset;
+    }
+}
+
+.red-white-line.second {
+    transform: translateY(60px) translateX(-30px) rotate(335deg);
+
+}
+
 @media screen and (max-width: 1200px) {
-    .project-card{
-    
+    .project-card {
         height: 270px;
         width: 270px;
 
         .project-desc {
-            h2{
+            h2 {
                 font-size: 15px;
             }
-            h3{
+            h3 {
                 font-size: 12px;
             }
 
-            .github-demo{
+            .github-demo {
                 margin-top: 10px !important;
                 font-size: 22px !important;
             }
@@ -199,14 +228,12 @@
             }
         }
     }
-    
 }
 
 @media screen and (max-width: 900px) {
     // .project-card{
-    
+
     //     height: 220px;
     //     width: 220px;
     // }
-    
 }
