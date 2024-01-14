@@ -2,6 +2,7 @@ import BST from "../assets/images/BST.png"
 import eCommerce from "../assets/images/eCommerce.png"
 import WordleClone from "../assets/images/WordleClone.png"
 import ATM_Console from "../assets/images/ATM_Console.png"
+import Achiveo from "../assets/images/Achiveo.png"
 
 export const projects = [
     {
@@ -46,7 +47,7 @@ export const projects = [
     },
     {
         title: 'Wordle Clone',
-        seconadryText: 'Wordle is a five-letter word guessing game with hints on letter positions.',
+        seconadryText: 'Wordle is a five-letter word guessing game with hints on letter positions',
         image: WordleClone,
         functionality: [
             'Word validation',
@@ -79,18 +80,27 @@ export const projects = [
         ],
         gitHub:'https://github.com/waleery/ATM_Console_Simulator'
     },
-    // {
-    //     title: 'Binary Search Tree qwadfwq',
-    //     seconadryText: 'App to visualise binary tree qwfdwqf',
-    //     image: eCommerce,
-    //     functionality: [
-    //         'sdsdsdsd',
-    //         'dsfsdf',
+    {
+        title: 'Achiveo',
+        seconadryText: 'Advanced fullstack app for managing tasks with a lot of functionalities',
+        image: Achiveo,
+        functionality: [
+            'Authorization',
+            'Organizations',
+            'Board creation/rename/delete',
+        ],
+        inProgress: true,
+        techStack: [
+            { technology: 'Next.js', color: 'black', icon: '' },
+            { technology: 'TypeScript', color: '#007acc', icon: '' },
+            { technology: 'Prisma', color: '#1b9583', icon: '' },
+            { technology: 'MySql', color: '#f29111', icon: '' },
+            { technology: 'Clerk', color: '#230068', icon: '' },
+            { technology: 'Zustand', color: 'white', icon: '' },
+            { technology: 'Zod', color: 'white', icon: '' },
+            // { technology: 'Tailwind', color: 'pink', icon: '' },
+        ],
+        gitHub:'https://github.com/waleery/trello-clone'
 
-    //     ],
-    //     techStack: [
-    //         { technology: 'React', color: '#fffew', icon: '' },
-    //         { technology: 'Scss', color: 'pink', icon: '' },
-    //     ],
-    // },
+    },
 ]
