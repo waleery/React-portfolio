@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/React-portfolio/static/css/main.ab04fe21.css",
-    "main.js": "/React-portfolio/static/js/main.022e1e4c.js",
+    "main.css": "/React-portfolio/static/css/main.c5bb3bd9.css",
+    "main.js": "/React-portfolio/static/js/main.0f05da11.js",
     "static/js/787.a2cb61a6.chunk.js": "/React-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/eCommerce.png": "/React-portfolio/static/media/eCommerce.0aa18c503d947c6963cc.png",
     "static/media/ATM_Console.png": "/React-portfolio/static/media/ATM_Console.a307774bf2ed78326e3f.png",
+    "static/media/Achiveo.png": "/React-portfolio/static/media/Achiveo.b8007947180f523ab2fb.png",
     "static/media/BST.png": "/React-portfolio/static/media/BST.759da619dedcae41b4ae.png",
     "static/media/WordleClone.png": "/React-portfolio/static/media/WordleClone.93abdeab39aa690e7c47.png",
+    "static/media/KanbanBoard.png": "/React-portfolio/static/media/KanbanBoard.df66aa1ca7e079253c75.png",
     "static/media/t-matic.png": "/React-portfolio/static/media/t-matic.df6df2180b5ef111e811.png",
     "static/media/helvetica-neu.ttf": "/React-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/logo3.png": "/React-portfolio/static/media/logo3.4e8df23c0dbefba0b048.png",
@@ -15,12 +17,12 @@
     "static/media/logo_sub-2.png": "/React-portfolio/static/media/logo_sub-2.3de6587076af4bc782cf.png",
     "static/media/CoolveticaRg-Regular.woff2": "/React-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/React-portfolio/index.html",
-    "main.ab04fe21.css.map": "/React-portfolio/static/css/main.ab04fe21.css.map",
-    "main.022e1e4c.js.map": "/React-portfolio/static/js/main.022e1e4c.js.map",
+    "main.c5bb3bd9.css.map": "/React-portfolio/static/css/main.c5bb3bd9.css.map",
+    "main.0f05da11.js.map": "/React-portfolio/static/js/main.0f05da11.js.map",
     "787.a2cb61a6.chunk.js.map": "/React-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab04fe21.css",
-    "static/js/main.022e1e4c.js"
+    "static/css/main.c5bb3bd9.css",
+    "static/js/main.0f05da11.js"
   ]
 }
