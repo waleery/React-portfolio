@@ -110,12 +110,12 @@ const Contact = () => {
                 </div>
                 <div className="map-wrap">
                     <MapContainer
-                        center={[53.13212150415938, 23.16846514114768]}
+                        center={[51.77305346568799, 19.48255096963088]}
                         zoom={13}
                     >
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                         <Marker
-                            position={[53.13212150415938, 23.16846514114768]}
+                            position={[51.77305346568799, 19.48255096963088]}
                         >
                             <Popup>Hey, I live here :)</Popup>
                         </Marker>
@@ -126,7 +126,7 @@ const Contact = () => {
                         <br />
                         Poland,
                         <br />
-                        Bialystok
+                        Łódź
                         <a href='mailto:p.k.walendziuk@gmail.com'>p.k.walendziuk@gmail.com</a>
                     </div>
                 </div>
@@ -138,3 +138,4 @@ const Contact = () => {
 }
 
 export default Contact
+
