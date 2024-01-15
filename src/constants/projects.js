@@ -3,6 +3,7 @@ import eCommerce from "../assets/images/eCommerce.png"
 import WordleClone from "../assets/images/WordleClone.png"
 import ATM_Console from "../assets/images/ATM_Console.png"
 import Achiveo from "../assets/images/Achiveo.png"
+import KanbanBoard from "../assets/images/KanbanBoard.png"
 
 export const projects = [
     {
@@ -53,6 +54,7 @@ export const projects = [
             'Authorization',
             'Organizations',
             'Board creation/rename/delete',
+            'Responsive design',
         ],
         inProgress: true,
         techStack: [
@@ -103,5 +105,27 @@ export const projects = [
         ],
         gitHub:'https://github.com/waleery/ATM_Console_Simulator'
     },
+    {
+        title: 'Kanban board',
+        seconadryText: 'Application to manage tasks using the Kanban method',
+        image: KanbanBoard,
+        functionality: [
+            'Drag and drop tasks',
+            'Adding tasks',
+            'Deleting tasks',
+            'Custom middleware',
+            'Store subscription with selector', 
+            'Persisting state in local storage',
+        ],
+        techStack: [
+            { technology: 'React', color: '#61DBFB', icon: '' },
+            { technology: 'Zustand', color: 'white', icon: '' },
+            { technology: 'Lodash', color: 'white', icon: '' },
+
+        ],
+        gitHub:'https://github.com/waleery/KanbanBoard-zustand',
+        liveDemo:'https://waleery.github.io/KanbanBoard-zustand/'
+    },
     
 ]
+
