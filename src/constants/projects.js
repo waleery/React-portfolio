@@ -46,6 +46,29 @@ export const projects = [
 
     },
     {
+        title: 'Achiveo',
+        seconadryText: 'Advanced fullstack app for managing tasks with a lot of functionalities',
+        image: Achiveo,
+        functionality: [
+            'Authorization',
+            'Organizations',
+            'Board creation/rename/delete',
+        ],
+        inProgress: true,
+        techStack: [
+            { technology: 'Next.js', color: 'black', icon: '' },
+            { technology: 'TypeScript', color: '#007acc', icon: '' },
+            { technology: 'Prisma', color: '#1b9583', icon: '' },
+            { technology: 'MySql', color: '#f29111', icon: '' },
+            { technology: 'Clerk', color: '#230068', icon: '' },
+            { technology: 'Zustand', color: 'white', icon: '' },
+            { technology: 'Zod', color: 'white', icon: '' },
+            // { technology: 'Tailwind', color: 'pink', icon: '' },
+        ],
+        gitHub:'https://github.com/waleery/trello-clone'
+
+    },
+    {
         title: 'Wordle Clone',
         seconadryText: 'Wordle is a five-letter word guessing game with hints on letter positions',
         image: WordleClone,
@@ -80,27 +103,5 @@ export const projects = [
         ],
         gitHub:'https://github.com/waleery/ATM_Console_Simulator'
     },
-    {
-        title: 'Achiveo',
-        seconadryText: 'Advanced fullstack app for managing tasks with a lot of functionalities',
-        image: Achiveo,
-        functionality: [
-            'Authorization',
-            'Organizations',
-            'Board creation/rename/delete',
-        ],
-        inProgress: true,
-        techStack: [
-            { technology: 'Next.js', color: 'black', icon: '' },
-            { technology: 'TypeScript', color: '#007acc', icon: '' },
-            { technology: 'Prisma', color: '#1b9583', icon: '' },
-            { technology: 'MySql', color: '#f29111', icon: '' },
-            { technology: 'Clerk', color: '#230068', icon: '' },
-            { technology: 'Zustand', color: 'white', icon: '' },
-            { technology: 'Zod', color: 'white', icon: '' },
-            // { technology: 'Tailwind', color: 'pink', icon: '' },
-        ],
-        gitHub:'https://github.com/waleery/trello-clone'
-
-    },
+    
 ]
