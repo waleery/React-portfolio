@@ -4,6 +4,7 @@ import WordleClone from "../assets/images/WordleClone.png"
 import ATM_Console from "../assets/images/ATM_Console.png"
 import Achiveo from "../assets/images/Achiveo.png"
 import KanbanBoard from "../assets/images/KanbanBoard.png"
+import SelfDrivingCar from "../assets/images/Self-driving-car.png"
 
 export const projects = [
     {
@@ -44,6 +45,25 @@ export const projects = [
         ],
         gitHub:'https://github.com/waleery/eCommerce',
         liveDemo:'https://e-commerce-zeta-sepia.vercel.app/',
+    },
+    {
+        title: 'Self driving car',
+        seconadryText: 'Car game simulation with implementend neural network',
+        image: SelfDrivingCar,
+        functionality: [
+            'Neural network visualisation',
+            'Stering car by arrows',
+            'Automatic control of the car due to AI',
+            'Save best brain to local storage',
+            'Change muation value',
+
+        ],
+        techStack: [
+            { technology: 'Java Script', color: '#F0DB4F', icon: '' },
+
+        ],
+        gitHub:'https://github.com/waleery/self-driving-car',
+        liveDemo:'https://waleery.github.io/self-driving-car/',
 
     },
     {
