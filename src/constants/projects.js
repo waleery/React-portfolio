@@ -76,7 +76,6 @@ export const projects = [
             'Board creation/rename/delete',
             'Responsive design',
         ],
-        inProgress: true,
         techStack: [
             { technology: 'Next.js', color: 'black', icon: '' },
             { technology: 'TypeScript', color: '#007acc', icon: '' },
