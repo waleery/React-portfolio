@@ -80,13 +80,13 @@ export const projects = [
             { technology: 'Next.js', color: 'black', icon: '' },
             { technology: 'TypeScript', color: '#007acc', icon: '' },
             { technology: 'Prisma', color: '#1b9583', icon: '' },
-            { technology: 'MySql', color: '#f29111', icon: '' },
             { technology: 'Clerk', color: '#230068', icon: '' },
+            { technology: 'PosgreSQL', color: '#008bb9', icon: '' },
             { technology: 'Zustand', color: 'white', icon: '' },
             { technology: 'Zod', color: 'white', icon: '' },
-            // { technology: 'Tailwind', color: 'pink', icon: '' },
         ],
-        gitHub:'https://github.com/waleery/trello-clone'
+        gitHub:'https://github.com/waleery/trello-clone',
+        liveDemo:'https://achiveo.vercel.app/',
 
     },
     {
