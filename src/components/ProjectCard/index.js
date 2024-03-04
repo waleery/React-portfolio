@@ -81,22 +81,22 @@ const ProjectCard = ({ project }) => {
                     </div>
                 </div>
                 <div className="second-side">
-                    <h2>Features {project.inProgress && "(so far)"}</h2>
-                    <div className="list-wrapper">
-                        <ul>
-                            {project.functionality.map((item, i) => (
-                                <li key={i}>{item}</li>
-                            ))}
-                        </ul>
-                        <button
-                            className="change-side back"
-                            onClick={() => {
-                                ref.current.className = 'project-card'
-                            }}
-                        >
+                        <h2>Features {project.inProgress && '(so far)'}</h2>
+                        <div className="list-wrapper">
+                            <ul>
+                                {project.functionality.map((item, i) => (
+                                    <li key={i}>{item}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    <button
+                        className="change-side back"
+                        onClick={() => {
+                            ref.current.className = 'project-card'
+                        }}
+                    >
                             <IoIosArrowBack />
-                        </button>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
