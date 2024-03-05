@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "homePage",
         "layout",
+        "sidebar",
         "sidebar"
     ]
 }

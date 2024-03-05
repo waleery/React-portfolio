@@ -10,17 +10,21 @@
     .logo {
         display: block;
         padding: 8px 0;
+        transition: scale 0.2s;
 
         img {
             display: block;
             margin: 8px auto;
-            width: 35px;
+            width: 30px;
             height: auto;
 
             &.sub-logo {
-                width: 50px;
+                width: 45px;
             }
         }
+        &:hover {
+            scale:1.2;
+       }
     }
 
     nav {
