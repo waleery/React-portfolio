@@ -47,13 +47,15 @@
             &:hover {
                 color: #ffd700;
                 svg {
-                    opacity: 0;
+                    opacity: 1;
+                    scale:1.2;
+                    transition: scale 0.2s;
                 }
 
                 &:after {
-                    opacity: 1;
+                    opacity: 0;
                 }
-            }
+            }           
 
             &::after {
                 content: '';
@@ -94,6 +96,8 @@
         a.active {
             svg {
                 color: #ffd700;
+                scale:1.5;
+                transition: scale 0.2s;
             }
         }
     }
