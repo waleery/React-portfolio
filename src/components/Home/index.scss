@@ -46,7 +46,7 @@
         float: left;
         animation: fadeIn 1s 1.8s backwards;
         white-space: nowrap;
-
+        transition: all 0.2s;
         &:hover {
             background: #ffd700;
             color: #333;
