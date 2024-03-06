@@ -1,11 +1,38 @@
-.text-animate{
+.text-animate, .paragraf-text-animate{
     display: inline-block;
     opacity: 0;
     animation: bounceIn 1s 1s;
     animation-fill-mode: forwards;
     letter-spacing: 2px;
+
+
+    
 }
 
+.space{
+    min-width: 10px;
+}
+.paragraf-text-animate {
+    letter-spacing: unset;
+
+    &.space {
+        min-width: 3px;
+    }
+}
+
+.paragraf-text-animate-hover{
+    animation-fill-mode: both;
+    display: inline-block;
+
+
+    &:hover{
+        animation: wobble 0.7s;
+        color: #ffd700;
+    }
+    &.space {
+        min-width: 3px;
+    }
+}
 .text-animate-hover{
     letter-spacing: 2px;
     display: inline-block;
@@ -17,12 +44,13 @@
     }
 }
 
-.space{
-    min-width: 10px;
-}
 
-@for $i from 1 through 35{
+
+@for $i from 1 through 500{
     .text-animate._#{$i}{
         animation-delay: #{$i /14}s;
+    }
+    .paragraf-text-animate._#{$i}{
+        animation-delay: #{ 1+ ($i /200)}s;
     }
 }

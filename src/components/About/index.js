@@ -8,12 +8,14 @@ import ExperienceCard from '../ExperienceCard'
 import { experiences } from '../../constants/experience'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
 import useShowScrollIndicator from '../../hooks/useShowScrollIndicator'
+import { h1, p1, p2, p3 } from '../../constants/aboutMe'
 const About = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [headerLetterClass, setHeaderLetterClass] = useState('text-animate')
+    const [paragrafLetterClass, setParagrafLetterClass] = useState('paragraf-text-animate')
     //const [showScrollIndicator, setShowScrollIndicator] = useState(false)
-    
+
     const { width, height } = useWindowDimensions()
-    
+
     const userScrolled = useRef(false);
     const aboutPageRef = useRef(null)
 
@@ -21,7 +23,11 @@ const About = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            setLetterClass('text-animate-hover')
+            setHeaderLetterClass('text-animate-hover')
+        }, 1000)
+        
+        setTimeout(() => {
+            setParagrafLetterClass('paragraf-text-animate-hover')
         }, 3000)
     }, [])
 
@@ -31,25 +37,31 @@ const About = () => {
                 <div className="text-zone">
                     <h1>
                         <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                            letterClass={headerLetterClass}
+                            strArray={h1.split('')}
                             idx={2}
                         />
                     </h1>
                     <p>
-                        I'm an ambitious front-end developer seeking a role in a
-                        well-established IT company. I'm eager to work with the
-                        latest technologies on interesting and diverse projects.
+                        <AnimatedLetters
+                            letterClass={paragrafLetterClass}
+                            strArray={p1.split('')}
+                            idx={20}
+                        />
                     </p>
                     <p align="LEFT">
-                        I'm quietly confident, naturally curious, and always
-                        working on improving my skills one design problem at a
-                        time.
+                        <AnimatedLetters
+                            letterClass={paragrafLetterClass}
+                            strArray={p2.split('')}
+                            idx={189}
+                        />
                     </p>
                     <p>
-                        If I had to sum myself up in one sentence: I'm a
-                        laid-back person, a runner, a photography enthusiast,
-                        and totally obsessed with technology!
+                        <AnimatedLetters
+                            letterClass={paragrafLetterClass}
+                            strArray={p3.split('')}
+                            idx={301}
+                        />
                     </p>
                 </div>
                 <div className="time-line">
