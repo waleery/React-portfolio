@@ -34,6 +34,10 @@
     .vertical-timeline-element-date{
         font-size: 12px !important;
     }
+
+    .vertical-timeline-element-content{
+        box-shadow: none;
+    }
 }
 .time-line::-webkit-scrollbar {
     display: none;
