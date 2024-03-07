@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-    VerticalTimeline,
     VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
 import "react-vertical-timeline-component/style.min.css";
@@ -10,7 +9,7 @@ const ExperienceCard = ({ experience }) => {
     return (
         <VerticalTimelineElement
             contentStyle={{ background: '#16445d', color: '#fff' }}
-            contentArrowStyle={{ borderRight: "7px solid  #fff" }}
+            //contentArrowStyle={{ borderRight: "7px solid  #fff" }}
             date={experience.date}
             iconStyle={{ background: experience.iconBg }}
             icon={
