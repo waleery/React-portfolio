@@ -1,12 +1,11 @@
-import logo3 from "../assets/images/logo3.png"
-import logoPb from "../assets/images/logo-pb.png"
-import tMatic from "../assets/images/t-matic.png"
+import studentCapIcon from "../assets/images/student-cap.png"
+import briefCaseIcon from "../assets/images/briefcase.png"
 
 export const experiences = [
     {
       title: "Web Developer - React",
       secondaryText: "Junior",
-      icon: tMatic,
+      icon: briefCaseIcon,
       iconBg: "#ececec",
       date: "1 Year of experience",
       points: [
@@ -18,7 +17,7 @@ export const experiences = [
     {
       title: "Web Developer",
       secondaryText: "Intern",
-      icon: tMatic,
+      icon: briefCaseIcon,
       iconBg: "#ececec",
       date: "1 Month of experience",
       points: [
@@ -31,7 +30,7 @@ export const experiences = [
     {
       title: "Bialystok University of Technology",
       secondaryText: "Bachelor's in Computer Science",
-      icon: logoPb,
+      icon: studentCapIcon,
       iconBg: "#ececec",
       date: "Oct 2019 - Feb 2023",
       points: [],
