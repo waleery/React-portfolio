@@ -8,7 +8,7 @@ export const experiences = [
       secondaryText: "Junior",
       icon: tMatic,
       iconBg: "#ececec",
-      date: "Dec 2022 - Present",
+      date: "1 Year of experience",
       points: [
         "Integrated and displayed time-tracking data from the Registration of Work Hours successfully, enhancing the system's functionality and contributing to improved workflow efficiency.",
         "Boosted efficiency by introducing advanced filters, reducing document search time by 35% and empowering users to swiftly locate relevant information.",
@@ -20,7 +20,7 @@ export const experiences = [
       secondaryText: "Intern",
       icon: tMatic,
       iconBg: "#ececec",
-      date: "Nov 2022 - Nov 2023",
+      date: "1 Month of experience",
       points: [
         "Worked closely with experienced developers to understand project requirements and identify areas for improvement.",
         "Played a key role in debugging and troubleshooting issues, contributing to the overall improvement of software quality.",
