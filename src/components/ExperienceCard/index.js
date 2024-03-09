@@ -13,7 +13,7 @@ const ExperienceCard = ({ experience }) => {
             date={experience.date}
             iconStyle={{ background: experience.iconBg }}
             icon={
-                <div className="card-icon">
+                <div className={experience.work ? "card-icon work" : "card-icon"}>
                     <img
                         src={experience.icon}
                         alt={experience.title}

@@ -12,6 +12,12 @@
         width: 80%;
         object-fit: contain;
     }
+
+    &.work{
+        img {
+            width: 60%;
+        }
+    }
 }
 
 .vertical-timeline-element-content-arrow{

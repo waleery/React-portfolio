@@ -7,6 +7,7 @@ export const experiences = [
       secondaryText: "Junior",
       icon: briefCaseIcon,
       iconBg: "#ececec",
+      work: true,
       date: "1 Year of experience",
       points: [
         "Integrated and displayed time-tracking data from the Registration of Work Hours successfully, enhancing the system's functionality and contributing to improved workflow efficiency.",
@@ -19,6 +20,7 @@ export const experiences = [
       secondaryText: "Intern",
       icon: briefCaseIcon,
       iconBg: "#ececec",
+      work: true,
       date: "1 Month of experience",
       points: [
         "Worked closely with experienced developers to understand project requirements and identify areas for improvement.",
