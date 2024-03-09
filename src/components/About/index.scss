@@ -28,12 +28,15 @@
         }
     }
        
-    .vertical-timeline-element-date{
-        font-size: 12px !important;
-    }
 
     .vertical-timeline-element-content{
-        box-shadow: rgba(255, 215, 0, 0.3) -5px 5px, rgba(255, 215, 0, 0.2) -10px 10px, rgba(255, 215, 0, 0.1) -15px 15px, rgba(255, 215, 0, 0.05) -20px 20px, rgba(255, 215, 0, 0.025) -25px 25px;   
+        box-shadow: rgba(255, 215, 0, 0.25) -5px 5px, rgba(255, 215, 0, 0.175) -10px 10px, rgba(255, 215, 0, 0.075) -15px 15px, rgba(255, 215, 0, 0.025) -20px 20px, rgba(255, 215, 0, 0.025) -25px 25px;   
+        
+        .vertical-timeline-element-date{
+            font-weight: bold;
+            font-size: 12px;
+        }
+    
     }
 
     .vertical-timeline--two-columns.vertical-timeline--animate .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content.bounce-in, .vertical-timeline--two-columns.vertical-timeline--animate .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content.bounce-in {
