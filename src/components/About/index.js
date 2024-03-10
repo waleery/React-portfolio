@@ -66,7 +66,7 @@ const About = () => {
                 </div>
                 <div className="time-line">
                     <VerticalTimeline
-                        lineColor={'yellow'}
+                        lineColor={'#ffd700'}
                         layout={
                             width < 1650 || height < 950
                                 ? '1-column-right'
