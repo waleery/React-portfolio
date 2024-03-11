@@ -5,15 +5,22 @@ import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import SendMailButton from '../SendMailButton'
+import { p1 } from '../../constants/contact'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const [paragrafLetterClass, setParagrafLetterClass] = useState('paragraf-text-animate')
+
     const refForm = useRef()
 
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
-        }, 3000)
+        }, 1000)
+
+        setTimeout(() => {
+            setParagrafLetterClass('paragraf-text-animate-hover')
+        }, 2900)
     }, [])
 
     const sendEmail = (e) => {
@@ -56,14 +63,15 @@ const Contact = () => {
                                 'e',
                             ]}
                             letterClass={letterClass}
-                            idx={15}
+                            idx={2}
                         />
                     </h1>
                     <p>
-                        Actively searching for full-time job opportunities,
-                        particularly in ambitious or large projects. If you have
-                        any other requests or questions, feel free to reach out
-                        using the form below.
+                        <AnimatedLetters
+                            letterClass={paragrafLetterClass}
+                            strArray={p1.split('')}
+                            idx={13}
+                        />
                     </p>
                     <div className="contact-form">
                         <form ref={refForm} onSubmit={sendEmail}>
@@ -127,7 +135,9 @@ const Contact = () => {
                         Poland,
                         <br />
                         Łódź
-                        <a href='mailto:p.k.walendziuk@gmail.com'>p.k.walendziuk@gmail.com</a>
+                        <a href="mailto:p.k.walendziuk@gmail.com">
+                            p.k.walendziuk@gmail.com
+                        </a>
                     </div>
                 </div>
             </div>
@@ -138,4 +148,3 @@ const Contact = () => {
 }
 
 export default Contact
-
