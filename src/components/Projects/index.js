@@ -38,7 +38,7 @@ const Projects = () => {
                     <AnimatedLetters
                         letterClass={letterClass}
                         strArray={overviewArray}
-                        idx={1}
+                        idx={2}
                     />
                 </h1>
                 <Cube />
