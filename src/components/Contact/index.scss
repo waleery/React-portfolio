@@ -42,6 +42,10 @@
         color: #fff;
         padding: 0 20px;
         box-sizing: border-box;
+        
+        &::placeholder{
+            color: rgb(255, 255, 255, 0.6)
+        }
     }
 
     textarea {
@@ -55,6 +59,10 @@
         padding: 20px;
         min-height: 150px;
         box-sizing: border-box;
+
+        &::placeholder{
+            color: rgb(255, 255, 255, 0.6)
+        }
     }
 
     .flat-button {
