@@ -7,24 +7,24 @@
     position: relative;
     display: grid;
     height: 50px;
-    width: 180px;
+    width: 160px;
     border: 1px solid hsla(0, 0%, 100%, 0.115);
-    border-radius: 100px;
+    //border-radius: 100px;
     overflow: hidden;
     display: grid;
     grid-template-columns: auto 3.5em;
     gap: 1.5em;
-    font-family: 'Geist Sans', sans-serif;
+    //font-family: 'Geist Sans', sans-serif;
     font-weight: 50;
     background: #ffd700;
-    color: hsl(0, 0%, 100%);
+    color: black;
     padding: 0.5em 0.5em 0.5em 1.5em;
     place-items: center;
-    box-shadow: 0 1px inset hsla(0, 0%, 100%, 0.732),
-        0 -10px 20px 10px hsla(0, 0%, 0%, 0.164) inset,
-        0 10px 20px 10px hsla(0, 0%, 50%, 0.126) inset,
-        0 1px hsla(60, 2%, 66%, 0.509);
-    letter-spacing: 0.05ch;
+    // box-shadow: 0 1px inset hsla(0, 0%, 100%, 0.732),
+    //     0 -10px 20px 10px hsla(0, 0%, 0%, 0.164) inset,
+    //     0 10px 20px 10px hsla(0, 0%, 50%, 0.126) inset,
+    //     0 1px hsla(60, 2%, 66%, 0.509);
+    // letter-spacing: 0.05ch;
 
     .backdrop {
         position: absolute;
@@ -34,20 +34,20 @@
             position: absolute;
             right: 0;
             height: 100%;
-            background: linear-gradient(transparent 50%, hsl(0 0% 30% / 0.5)),
-                hsl(0 0% 0%);
-            box-shadow: 0 -1px inset hsl(0 0% 100% / 0.35);
+            // background: linear-gradient(transparent 50%, hsl(0 0% 30% / 0.5)),
+            //     hsl(0 0% 0%);
+            // box-shadow: 0 -1px inset hsl(0 0% 100% / 0.35);
             width: 3.5em;
             aspect-ratio: 1;
             transition: width var(--speed);
-            border-radius: 100px;
+            //border-radius: 100px;
         }
     }
 
     .text {
         display: inline-block;
         z-index: 2;
-        padding: 0 0.5rem;
+        //padding: 0 0.5rem;
     }
 
     .icon {
@@ -62,8 +62,9 @@
         z-index: 2;
 
         svg {
-            width: 50%;
+            width: 60%;
             overflow: visible !important;
+            stroke: black;
         }
 
         svg path:nth-of-type(1) {
