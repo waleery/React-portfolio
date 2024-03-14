@@ -10,7 +10,8 @@ import { p1 } from '../../constants/contact'
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const [paragrafLetterClass, setParagrafLetterClass] = useState('paragraf-text-animate')
-
+    
+    const h1 = "Contact me"
     const refForm = useRef()
 
     useEffect(() => {
@@ -50,18 +51,7 @@ const Contact = () => {
                 <div className="text-zone">
                     <h1>
                         <AnimatedLetters
-                            strArray={[
-                                'C',
-                                'o',
-                                'n',
-                                't',
-                                'a',
-                                'c',
-                                't',
-                                ' ',
-                                'm',
-                                'e',
-                            ]}
+                            strArray={h1}
                             letterClass={letterClass}
                             idx={2}
                         />
@@ -69,7 +59,7 @@ const Contact = () => {
                     <p>
                         <AnimatedLetters
                             letterClass={paragrafLetterClass}
-                            strArray={p1.split('')}
+                            strArray={p1}
                             idx={13}
                         />
                     </p>
