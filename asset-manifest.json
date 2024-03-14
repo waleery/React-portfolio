@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-portfolio/static/css/main.1a76ec89.css",
-    "main.js": "/React-portfolio/static/js/main.df3ebee8.js",
+    "main.css": "/React-portfolio/static/css/main.3e792040.css",
+    "main.js": "/React-portfolio/static/js/main.ad1e0292.js",
     "static/js/787.a2cb61a6.chunk.js": "/React-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/Achiveo.png": "/React-portfolio/static/media/Achiveo.7d6f2b7f9832f200097e.png",
     "static/media/Self-driving-car.png": "/React-portfolio/static/media/Self-driving-car.778b91a0ec91b85df1a3.png",
@@ -10,20 +10,18 @@
     "static/media/BST.png": "/React-portfolio/static/media/BST.759da619dedcae41b4ae.png",
     "static/media/WordleClone.png": "/React-portfolio/static/media/WordleClone.93abdeab39aa690e7c47.png",
     "static/media/KanbanBoard.png": "/React-portfolio/static/media/KanbanBoard.df66aa1ca7e079253c75.png",
-    "static/media/t-matic.png": "/React-portfolio/static/media/t-matic.df6df2180b5ef111e811.png",
     "static/media/helvetica-neu.ttf": "/React-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
-    "static/media/logo3.png": "/React-portfolio/static/media/logo3.4e8df23c0dbefba0b048.png",
     "static/media/logo-w.png": "/React-portfolio/static/media/logo-w.df87369409b8b081e0ab.png",
     "static/media/LaBelleAurore.woff2": "/React-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/logo_sub-2.png": "/React-portfolio/static/media/logo_sub-2.3de6587076af4bc782cf.png",
     "static/media/CoolveticaRg-Regular.woff2": "/React-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/React-portfolio/index.html",
-    "main.1a76ec89.css.map": "/React-portfolio/static/css/main.1a76ec89.css.map",
-    "main.df3ebee8.js.map": "/React-portfolio/static/js/main.df3ebee8.js.map",
+    "main.3e792040.css.map": "/React-portfolio/static/css/main.3e792040.css.map",
+    "main.ad1e0292.js.map": "/React-portfolio/static/js/main.ad1e0292.js.map",
     "787.a2cb61a6.chunk.js.map": "/React-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a76ec89.css",
-    "static/js/main.df3ebee8.js"
+    "static/css/main.3e792040.css",
+    "static/js/main.ad1e0292.js"
   ]
 }
