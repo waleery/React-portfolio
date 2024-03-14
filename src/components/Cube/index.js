@@ -14,7 +14,6 @@ import {
 const Cube = () => {
     return (
         <div className="stage-cube-cont">
-            <div className="center">X</div>
             <div className="cubespinner">
                 <div className="face1">
                     <FontAwesomeIcon icon={faHtml5} color="#F06529" />

@@ -65,12 +65,9 @@
             min-width: 20%;
             width: 100%;
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
-            align-items: center;
 
             .stage-cube-cont {
-                width: 80%;
                 height: 200px;
             }
         }
@@ -83,12 +80,8 @@
             min-width: 20%;
             width: 100%;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
 
             .stage-cube-cont {
-                width: 80%;
                 height: 150px;
             }
         }
