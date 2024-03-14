@@ -38,28 +38,28 @@ const About = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={headerLetterClass}
-                            strArray={h1.split('')}
+                            strArray={h1}
                             idx={2}
                         />
                     </h1>
                     <p>
                         <AnimatedLetters
                             letterClass={paragrafLetterClass}
-                            strArray={p1.split('')}
+                            strArray={p1}
                             idx={20}
                         />
                     </p>
                     <p align="LEFT">
                         <AnimatedLetters
                             letterClass={paragrafLetterClass}
-                            strArray={p2.split('')}
+                            strArray={p2}
                             idx={189}
                         />
                     </p>
                     <p>
                         <AnimatedLetters
                             letterClass={paragrafLetterClass}
-                            strArray={p3.split('')}
+                            strArray={p3}
                             idx={301}
                         />
                     </p>
