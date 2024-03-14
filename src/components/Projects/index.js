@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
-import { projects } from '../../constants/projects'
+import { p, projects } from '../../constants/projects'
 import ProjectCard from '../ProjectCard'
 import Cube from '../Cube'
 import { FaChevronDown } from 'react-icons/fa6'
@@ -10,7 +10,9 @@ import useWindowDimensions from '../../hooks/useWindowDimensions'
 
 const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const overviewArray = ['P', 'r', 'o', 'j', 'e', 'c', 't', 's']
+    const [paragrafLetterClass, setParagrafLetterClass] = useState('paragraf-text-animate')
+
+    const overviewArray = "Projects"
 
     const projectsZoneRef = useRef(null)
     const projectsPageRef = useRef(null)
@@ -29,7 +31,11 @@ const Projects = () => {
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
-        }, 4000)
+        }, 1000)
+
+        setTimeout(() => {
+            setParagrafLetterClass('paragraf-text-animate-hover')
+        }, 2900)
     }, [])
     return (
         <div className="projects-page" ref={projectsPageRef}>
@@ -41,6 +47,13 @@ const Projects = () => {
                         idx={2}
                     />
                 </h1>
+                <p>
+                        <AnimatedLetters
+                            letterClass={paragrafLetterClass}
+                            strArray={p}
+                            idx={10}
+                        />
+                    </p>
                 <Cube />
             </div>
             <div className="projects-zone" ref={projectsZoneRef}>
