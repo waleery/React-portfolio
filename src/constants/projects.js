@@ -5,7 +5,10 @@ import ATM_Console from "../assets/images/ATM_Console.png"
 import Achiveo from "../assets/images/Achiveo.png"
 import KanbanBoard from "../assets/images/KanbanBoard.png"
 import SelfDrivingCar from "../assets/images/Self-driving-car.png"
-export const p = "Here, you'll find a collection of my recent projects, each showcasing my dedication and creativity. Take your time to explore the work I've put my heart into. Enjoy!"
+
+
+export const projectsH1 = "Projects"
+export const projectsP1 = "Here, you'll find a collection of my recent projects, each showcasing my dedication and creativity. Take your time to explore the work I've put my heart into. Enjoy!"
 
 export const projects = [
     {

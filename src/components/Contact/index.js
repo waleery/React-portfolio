@@ -5,13 +5,13 @@ import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import SendMailButton from '../SendMailButton'
-import { p1 } from '../../constants/contact'
+import { contactP1 } from '../../constants/contact'
+import { contactH1 } from '../../constants/contact'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const [paragrafLetterClass, setParagrafLetterClass] = useState('paragraf-text-animate')
     
-    const h1 = "Contact me"
     const refForm = useRef()
 
     useEffect(() => {
@@ -51,7 +51,7 @@ const Contact = () => {
                 <div className="text-zone">
                     <h1>
                         <AnimatedLetters
-                            strArray={h1}
+                            strArray={contactH1}
                             letterClass={letterClass}
                             idx={2}
                         />
@@ -59,7 +59,7 @@ const Contact = () => {
                     <p>
                         <AnimatedLetters
                             letterClass={paragrafLetterClass}
-                            strArray={p1}
+                            strArray={contactP1}
                             idx={13}
                         />
                     </p>

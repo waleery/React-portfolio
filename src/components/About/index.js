@@ -8,7 +8,7 @@ import ExperienceCard from '../ExperienceCard'
 import { experiences } from '../../constants/experience'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
 import useShowScrollIndicator from '../../hooks/useShowScrollIndicator'
-import { h1, p1, p2, p3 } from '../../constants/aboutMe'
+import { aboutMeH1, aboutMeP1, aboutMeP2, aboutMeP3, h1, p1, p2, p3 } from '../../constants/aboutMe'
 const About = () => {
     const [headerLetterClass, setHeaderLetterClass] = useState('text-animate')
     const [paragrafLetterClass, setParagrafLetterClass] = useState('paragraf-text-animate')
@@ -38,28 +38,28 @@ const About = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={headerLetterClass}
-                            strArray={h1}
+                            strArray={aboutMeH1}
                             idx={2}
                         />
                     </h1>
                     <p>
                         <AnimatedLetters
                             letterClass={paragrafLetterClass}
-                            strArray={p1}
+                            strArray={aboutMeP1}
                             idx={20}
                         />
                     </p>
                     <p align="LEFT">
                         <AnimatedLetters
                             letterClass={paragrafLetterClass}
-                            strArray={p2}
+                            strArray={aboutMeP2}
                             idx={189}
                         />
                     </p>
                     <p>
                         <AnimatedLetters
                             letterClass={paragrafLetterClass}
-                            strArray={p3}
+                            strArray={aboutMeP3}
                             idx={301}
                         />
                     </p>

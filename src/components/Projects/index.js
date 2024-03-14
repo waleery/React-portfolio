@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
-import { p, projects } from '../../constants/projects'
+import { projects, projectsH1, projectsP1 } from '../../constants/projects'
 import ProjectCard from '../ProjectCard'
 import Cube from '../Cube'
 import { FaChevronDown } from 'react-icons/fa6'
@@ -12,7 +12,6 @@ const Projects = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const [paragrafLetterClass, setParagrafLetterClass] = useState('paragraf-text-animate')
 
-    const overviewArray = "Projects"
 
     const projectsZoneRef = useRef(null)
     const projectsPageRef = useRef(null)
@@ -43,14 +42,14 @@ const Projects = () => {
                 <h1>
                     <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={overviewArray}
+                        strArray={projectsH1}
                         idx={2}
                     />
                 </h1>
                 <p>
                         <AnimatedLetters
                             letterClass={paragrafLetterClass}
-                            strArray={p}
+                            strArray={projectsP1}
                             idx={10}
                         />
                     </p>
