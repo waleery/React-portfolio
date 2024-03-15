@@ -52,4 +52,8 @@
     display: none;
 }
 
-
+@media screen and (max-height: 700px) {
+    .time-line{
+        height: 90%;
+    }
+}

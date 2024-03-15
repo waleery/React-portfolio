@@ -18,8 +18,10 @@ const About = () => {
 
     const userScrolled = useRef(false);
     const aboutPageRef = useRef(null)
+    const timeLineRef = useRef(null)
 
-    const showScrollIndicator = useShowScrollIndicator(aboutPageRef, userScrolled)
+    const showScrollIndicatorPage = useShowScrollIndicator(aboutPageRef, userScrolled)
+    const showScrollIndicatorTimeLine= useShowScrollIndicator(timeLineRef, userScrolled)
 
     useEffect(() => {
         setTimeout(() => {
@@ -64,7 +66,9 @@ const About = () => {
                         />
                     </p>
                 </div>
-                <div className="time-line">
+                <div className="time-line"
+                        ref={timeLineRef}
+>
                     <VerticalTimeline
                         lineColor={'#ffd700'}
                         layout={
@@ -83,7 +87,7 @@ const About = () => {
                     <div
                         className="show-scroll-indicator"
                         style={
-                            !showScrollIndicator
+                            !showScrollIndicatorPage && !showScrollIndicatorTimeLine
                                 ? {
                                       opacity: 0,
                                       transition: 'opacity 0.5s ease-in-out',
