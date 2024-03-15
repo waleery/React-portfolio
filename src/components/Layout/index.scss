@@ -89,6 +89,9 @@
         &:nth-of-type(3) {
             animation-delay: 2.8s;
         }
+        span{
+            display: inline-block;
+        }
     }
     .text-zone {
         margin: 100px 6.5%;
@@ -217,7 +220,7 @@
 }
 @media screen and (max-width: 500px) {
     .page {
-        width: 100%;
+       width: 100%;
         height: calc(100% - 60px);
         margin-top: 60px;
         margin-left: 0;
