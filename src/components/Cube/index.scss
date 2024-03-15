@@ -11,8 +11,10 @@
         animation-iteration-count: infinite;
         animation-duration: 10s;
         transform-style: preserve-3d;
+
         position: relative;
-        
+        // -webkit-transform: translate3d(0, 0, 0);
+        // -webkit-transform: translateZ(0);
         margin-top: -200px;
         left:-100px;
         transform-origin: 100px 100px 0;
@@ -30,6 +32,10 @@
             justify-content: center;
             align-items: center;
             //box-shadow: 0 0 20px 0px lightyellow;
+        //     -webkit-transform: translate3d(0, 0, 0);
+        // -webkit-transform: translateZ(0);
+        // transform-style: preserve-3d;
+
         }
 
         .face1 {
@@ -61,10 +67,10 @@
             transform: rotateY(-90deg);
         }
         33% {
-            transform: rotateY(-90deg) rotateZ(90deg);
+            transform: rotateY(-180deg) rotateZ(90deg);
         }
         50% {
-            transform: rotateY(-180deg) rotateZ(90deg);
+            transform: rotateY(-90deg) rotateZ(90deg);
         }
         66% {
             transform: rotateY(-270deg) rotateX(90deg);
@@ -157,6 +163,7 @@
                 height: 100px;
                 width: 100px;
                 font-size: 55px;
+            
             }
 
             .face1 {
