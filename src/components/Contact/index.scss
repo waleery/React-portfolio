@@ -37,15 +37,18 @@
         width: 100%;
         border: 0;
         background: #115173;
-        height: 50px;
+        height: 40px;
         font-size: 14px;
         color: #fff;
-        padding: 0 20px;
+        padding: 0 10px;
         box-sizing: border-box;
         
         &::placeholder{
             color: rgb(255, 255, 255, 0.6)
         }
+        &:focus{
+            outline-color: #ffd700;
+        }   
     }
 
     textarea {
@@ -56,13 +59,16 @@
         max-height: 250px;
         font-size: 14px;
         color: #fff;
-        padding: 20px;
+        padding: 15px 10px;
         min-height: 150px;
         box-sizing: border-box;
 
         &::placeholder{
             color: rgb(255, 255, 255, 0.6)
         }
+        &:focus{
+            outline-color: #ffd700;
+        } 
     }
 
     .flat-button {
@@ -128,11 +134,14 @@
         input[type='text'],
         input[type='email'] {
             height: 35px;
+            font-size: 13px;
         }
 
         textarea {
             height: 40px;
             min-height: 100px;
+            padding: 10px 10px;
+
         }
     }
 }
