@@ -105,3 +105,16 @@
 .send-mail:is(:hover, :focus-visible) .action {
     width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+    .send-mail {
+        height: 40px;
+        width: 130px;
+        font-size: 13px;
+        gap: unset;
+        
+        .icon > svg {
+            width: 50%;
+        }
+    }
+}
