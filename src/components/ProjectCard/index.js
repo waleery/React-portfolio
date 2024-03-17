@@ -58,10 +58,6 @@ const ProjectCard = ({ project }) => {
                                     className="project-technology"
                                     style={{
                                         color: item.color,
-                                        textShadow:
-                                            item.color === 'black' || item.color === '#230068'
-                                                ? `${item.color} 0px 0px 0.5px, ${item.color} 0px 0px 50px, ${item.color} 0px 0px 10px`
-                                                : `${item.color} 0px 0px 14px, ${item.color} 0px 0px 10px, ${item.color} 0px 0px 5px`,
                                     }}
                                     key={i}
                                 >
