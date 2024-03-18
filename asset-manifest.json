@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-portfolio/static/css/main.be27f946.css",
-    "main.js": "/React-portfolio/static/js/main.ad1e0292.js",
+    "main.css": "/React-portfolio/static/css/main.36254fe1.css",
+    "main.js": "/React-portfolio/static/js/main.85574c48.js",
     "static/js/787.a2cb61a6.chunk.js": "/React-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/Achiveo.png": "/React-portfolio/static/media/Achiveo.7d6f2b7f9832f200097e.png",
     "static/media/Self-driving-car.png": "/React-portfolio/static/media/Self-driving-car.778b91a0ec91b85df1a3.png",
@@ -16,12 +16,12 @@
     "static/media/logo_sub-2.png": "/React-portfolio/static/media/logo_sub-2.3de6587076af4bc782cf.png",
     "static/media/CoolveticaRg-Regular.woff2": "/React-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/React-portfolio/index.html",
-    "main.be27f946.css.map": "/React-portfolio/static/css/main.be27f946.css.map",
-    "main.ad1e0292.js.map": "/React-portfolio/static/js/main.ad1e0292.js.map",
+    "main.36254fe1.css.map": "/React-portfolio/static/css/main.36254fe1.css.map",
+    "main.85574c48.js.map": "/React-portfolio/static/js/main.85574c48.js.map",
     "787.a2cb61a6.chunk.js.map": "/React-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be27f946.css",
-    "static/js/main.ad1e0292.js"
+    "static/css/main.36254fe1.css",
+    "static/js/main.85574c48.js"
   ]
 }
