@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/React-portfolio/static/css/main.238d7990.css",
+    "main.css": "/React-portfolio/static/css/main.70f2c972.css",
     "main.js": "/React-portfolio/static/js/main.e9d90471.js",
     "static/js/787.a2cb61a6.chunk.js": "/React-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/Achiveo.png": "/React-portfolio/static/media/Achiveo.7d6f2b7f9832f200097e.png",
@@ -9,7 +9,6 @@
     "static/media/ATM_Console.png": "/React-portfolio/static/media/ATM_Console.a307774bf2ed78326e3f.png",
     "static/media/BST.png": "/React-portfolio/static/media/BST.759da619dedcae41b4ae.png",
     "static/media/WordleClone.png": "/React-portfolio/static/media/WordleClone.93abdeab39aa690e7c47.png",
-    "static/media/helveticaneue.woff2": "/React-portfolio/static/media/helveticaneue.ae14dceddfa38f9172d1.woff2",
     "static/media/KanbanBoard.png": "/React-portfolio/static/media/KanbanBoard.df66aa1ca7e079253c75.png",
     "static/media/OpenSans.woff2": "/React-portfolio/static/media/OpenSans.967e123ad65de8c5d5c4.woff2",
     "static/media/logo-w.png": "/React-portfolio/static/media/logo-w.df87369409b8b081e0ab.png",
@@ -17,12 +16,12 @@
     "static/media/logo_sub-2.png": "/React-portfolio/static/media/logo_sub-2.3de6587076af4bc782cf.png",
     "static/media/CoolveticaRg-Regular.woff2": "/React-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/React-portfolio/index.html",
-    "main.238d7990.css.map": "/React-portfolio/static/css/main.238d7990.css.map",
+    "main.70f2c972.css.map": "/React-portfolio/static/css/main.70f2c972.css.map",
     "main.e9d90471.js.map": "/React-portfolio/static/js/main.e9d90471.js.map",
     "787.a2cb61a6.chunk.js.map": "/React-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.238d7990.css",
+    "static/css/main.70f2c972.css",
     "static/js/main.e9d90471.js"
   ]
 }
