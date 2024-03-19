@@ -17,10 +17,14 @@ $primary-color: #ffd700;
   font-family: 'Coolvetica';
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./assets/fonts/OpenSans.ttf') format('ttf');
+}
 
 input,
 textarea{
-  font-family: 'Helvetica Neue';
+  font-family: 'Open Sans';
 }
 
 .loader-active{
