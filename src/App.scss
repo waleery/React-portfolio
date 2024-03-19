@@ -3,10 +3,6 @@ $primary-color: #ffd700;
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
 
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('./assets/fonts/helveticaneue.woff2') format('woff2');
-}
 
 @font-face {
     font-family: 'La Belle Aurore';
@@ -24,7 +20,7 @@ $primary-color: #ffd700;
 
 input,
 textarea {
-    font-family: 'Open Sans';
+    font-family:'Open Sans';
 }
 
 .loader-active {
