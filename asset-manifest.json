@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/React-portfolio/static/css/main.d1479525.css",
+    "main.css": "/React-portfolio/static/css/main.18168484.css",
     "main.js": "/React-portfolio/static/js/main.e9d90471.js",
     "static/js/787.a2cb61a6.chunk.js": "/React-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/Achiveo.png": "/React-portfolio/static/media/Achiveo.7d6f2b7f9832f200097e.png",
     "static/media/Self-driving-car.png": "/React-portfolio/static/media/Self-driving-car.778b91a0ec91b85df1a3.png",
     "static/media/eCommerce.png": "/React-portfolio/static/media/eCommerce.0aa18c503d947c6963cc.png",
+    "static/media/OpenSans.ttf": "/React-portfolio/static/media/OpenSans.19ba637387f1d6142f55.ttf",
     "static/media/ATM_Console.png": "/React-portfolio/static/media/ATM_Console.a307774bf2ed78326e3f.png",
     "static/media/BST.png": "/React-portfolio/static/media/BST.759da619dedcae41b4ae.png",
     "static/media/WordleClone.png": "/React-portfolio/static/media/WordleClone.93abdeab39aa690e7c47.png",
@@ -16,12 +17,12 @@
     "static/media/logo_sub-2.png": "/React-portfolio/static/media/logo_sub-2.3de6587076af4bc782cf.png",
     "static/media/CoolveticaRg-Regular.woff2": "/React-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/React-portfolio/index.html",
-    "main.d1479525.css.map": "/React-portfolio/static/css/main.d1479525.css.map",
+    "main.18168484.css.map": "/React-portfolio/static/css/main.18168484.css.map",
     "main.e9d90471.js.map": "/React-portfolio/static/js/main.e9d90471.js.map",
     "787.a2cb61a6.chunk.js.map": "/React-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1479525.css",
+    "static/css/main.18168484.css",
     "static/js/main.e9d90471.js"
   ]
 }
