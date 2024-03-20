@@ -26,7 +26,7 @@ export const projects = [
         techStack: [
             { technology: 'React', color: '#61DBFB', icon: '' },
             { technology: 'Sass', color: '#CD6799', icon: '' },
-            { technology: 'React D3 Tree', color: 'pink', icon: '' },
+            { technology: 'React D3 Tree', color: 'white', icon: '' },
         ],
         gitHub:'https://github.com/waleery/BinarySearchTreeReact',
         liveDemo:'https://waleery.github.io/BinarySearchTreeReact/',
@@ -42,7 +42,7 @@ export const projects = [
 
         ],
         techStack: [
-            { technology: 'Next.js', color: 'black', icon: '' },
+            { technology: 'Next.js', color: 'white', icon: '' },
             { technology: 'Sass', color: '#CD6799', icon: '' },
             { technology: 'Stripe', color: 'rgb(98, 91, 249)', icon: '' },
             { technology: 'Sanity.io', color: 'rgb(230, 110, 93)', icon: '' },
@@ -95,10 +95,10 @@ export const projects = [
             'shadcnUI & TailwindCSS',
         ],
         techStack: [
-            { technology: 'Next.js', color: 'black', icon: '' },
+            { technology: 'Next.js', color: 'white', icon: '' },
             { technology: 'TypeScript', color: '#007acc', icon: '' },
             { technology: 'Prisma', color: '#1b9583', icon: '' },
-            { technology: 'Clerk', color: '#230068', icon: '' },
+            { technology: 'Clerk', color: 'white', icon: '' },
             { technology: 'PosgreSQL', color: '#008bb9', icon: '' },
             { technology: 'Zustand', color: 'white', icon: '' },
             { technology: 'Zod', color: 'white', icon: '' },
