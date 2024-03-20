@@ -12,65 +12,6 @@ export const projectsP1 = "Here, you'll find a collection of my recent projects,
 
 export const projects = [
     {
-        title: 'Binary Search Tree',
-        seconadryText: 'App to visualise binary tree',
-        image: BST,
-        functionality: [
-            'Adding value',
-            'Finding path',
-            'Balance tree',
-            'Resposive desing',
-            'Validation',
-            'Dark theme'
-        ],
-        techStack: [
-            { technology: 'React', color: '#61DBFB', icon: '' },
-            { technology: 'Sass', color: '#CD6799', icon: '' },
-            { technology: 'React D3 Tree', color: 'white', icon: '' },
-        ],
-        gitHub:'https://github.com/waleery/BinarySearchTreeReact',
-        liveDemo:'https://waleery.github.io/BinarySearchTreeReact/',
-    },
-    {
-        title: 'E-commerce store',
-        seconadryText: 'Shop with electronics',
-        image: eCommerce,
-        functionality: [
-            'Easy product management through Sanity.io',
-            'Stripe payments',
-            'Resposive desing',
-
-        ],
-        techStack: [
-            { technology: 'Next.js', color: 'white', icon: '' },
-            { technology: 'Sass', color: '#CD6799', icon: '' },
-            { technology: 'Stripe', color: 'rgb(98, 91, 249)', icon: '' },
-            { technology: 'Sanity.io', color: 'rgb(230, 110, 93)', icon: '' },
-        ],
-        gitHub:'https://github.com/waleery/eCommerce',
-        liveDemo:'https://e-commerce-zeta-sepia.vercel.app/',
-    },
-    {
-        title: 'Self driving car',
-        seconadryText: 'Car game simulation with implementend neural network',
-        image: SelfDrivingCar,
-        functionality: [
-            'Neural network visualisation',
-            'Stering car by arrows',
-            'Automatic control of the car due to AI',
-            'Save best brain to local storage',
-            'Change muation value',
-
-        ],
-        techStack: [
-            { technology: 'Java Script', color: '#F0DB4F', icon: '' },
-
-        ],
-        gitHub:'https://github.com/waleery/self-driving-car',
-        liveDemo:'https://waleery.github.io/self-driving-car/',
-
-    },
-    {
         title: 'Achiveo',
         seconadryText: 'Advanced fullstack app for managing tasks with a lot of functionalities',
         image: Achiveo,
@@ -108,21 +49,44 @@ export const projects = [
 
     },
     {
-        title: 'Wordle Clone',
-        seconadryText: 'Wordle is a five-letter word guessing game with hints on letter positions',
-        image: WordleClone,
+        title: 'Self driving car',
+        seconadryText: 'Car game simulation with implementend neural network',
+        image: SelfDrivingCar,
         functionality: [
-            'Word validation',
-            'Base diferent words to guess',
-            'Information about win/lose',
-            'Hints in the form of colored letters',
+            'Neural network visualisation',
+            'Stering car by arrows',
+            'Automatic control of the car due to AI',
+            'Save best brain to local storage',
+            'Change muation value',
+
+        ],
+        techStack: [
+            { technology: 'Java Script', color: '#F0DB4F', icon: '' },
+
+        ],
+        gitHub:'https://github.com/waleery/self-driving-car',
+        liveDemo:'https://waleery.github.io/self-driving-car/',
+
+    },
+    {
+        title: 'Binary Search Tree',
+        seconadryText: 'App to visualise binary tree',
+        image: BST,
+        functionality: [
+            'Adding value',
+            'Finding path',
+            'Balance tree',
+            'Resposive desing',
+            'Validation',
+            'Dark theme'
         ],
         techStack: [
             { technology: 'React', color: '#61DBFB', icon: '' },
-            { technology: 'JSON Server', color: 'white', icon: '' },
+            { technology: 'Sass', color: '#CD6799', icon: '' },
+            { technology: 'React D3 Tree', color: 'white', icon: '' },
         ],
-        gitHub:'https://github.com/waleery/Wordle_Clone_React',
-        liveDemo:'https://waleery.github.io/Wordle_Clone_React'
+        gitHub:'https://github.com/waleery/BinarySearchTreeReact',
+        liveDemo:'https://waleery.github.io/BinarySearchTreeReact/',
     },
     {
         title: 'ATM Console Simulator',
@@ -162,6 +126,42 @@ export const projects = [
         ],
         gitHub:'https://github.com/waleery/KanbanBoard-zustand',
         liveDemo:'https://waleery.github.io/KanbanBoard-zustand/'
+    },
+    {
+        title: 'Wordle Clone',
+        seconadryText: 'Wordle is a five-letter word guessing game with hints on letter positions',
+        image: WordleClone,
+        functionality: [
+            'Word validation',
+            'Base diferent words to guess',
+            'Information about win/lose',
+            'Hints in the form of colored letters',
+        ],
+        techStack: [
+            { technology: 'React', color: '#61DBFB', icon: '' },
+            { technology: 'JSON Server', color: 'white', icon: '' },
+        ],
+        gitHub:'https://github.com/waleery/Wordle_Clone_React',
+        liveDemo:'https://waleery.github.io/Wordle_Clone_React'
+    },
+    {
+        title: 'E-commerce store',
+        seconadryText: 'Shop with electronics',
+        image: eCommerce,
+        functionality: [
+            'Easy product management through Sanity.io',
+            'Stripe payments',
+            'Resposive desing',
+
+        ],
+        techStack: [
+            { technology: 'Next.js', color: 'white', icon: '' },
+            { technology: 'Sass', color: '#CD6799', icon: '' },
+            { technology: 'Stripe', color: 'rgb(98, 91, 249)', icon: '' },
+            { technology: 'Sanity.io', color: 'rgb(230, 110, 93)', icon: '' },
+        ],
+        gitHub:'https://github.com/waleery/eCommerce',
+        liveDemo:'https://e-commerce-zeta-sepia.vercel.app/',
     },
     
 ]
