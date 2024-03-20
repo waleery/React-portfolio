@@ -13,7 +13,7 @@ export const projectsP1 = "Here, you'll find a collection of my recent projects,
 export const projects = [
     {
         title: 'Achiveo',
-        seconadryText: 'Advanced fullstack app for managing tasks with a lot of functionalities',
+        seconadryText: 'Advanced fullstack application for managing task states. Supports multi-team work.',
         image: Achiveo,
         functionality: [
             'Auth',
@@ -50,7 +50,7 @@ export const projects = [
     },
     {
         title: 'Self driving car',
-        seconadryText: 'Car game simulation with implementend neural network',
+        seconadryText: 'A car game in which AI can control the car. Visualizes the workings of a neural network.',
         image: SelfDrivingCar,
         functionality: [
             'Neural network visualisation',
@@ -70,7 +70,7 @@ export const projects = [
     },
     {
         title: 'Binary Search Tree',
-        seconadryText: 'App to visualise binary tree',
+        seconadryText: 'An application that visualizes a binary tree. Allows you to perform various operations on the tree.',
         image: BST,
         functionality: [
             'Adding value',
@@ -90,7 +90,7 @@ export const projects = [
     },
     {
         title: 'ATM Console Simulator',
-        seconadryText: 'An application that simulates the operation of an ATM machine',
+        seconadryText: 'An application that simulates the operation of an ATM. Supports multiple customers and transfers between accounts.',
         image: ATM_Console,
         functionality: [
             'Logging in by card number and PIN',
@@ -108,7 +108,7 @@ export const projects = [
     },
     {
         title: 'Kanban board',
-        seconadryText: 'Application to manage tasks using the Kanban method',
+        seconadryText: 'An application for managing tasks using the Kanban method. Drag and drop implemented without using additional libraries',
         image: KanbanBoard,
         functionality: [
             'Drag and drop tasks',
@@ -129,7 +129,7 @@ export const projects = [
     },
     {
         title: 'Wordle Clone',
-        seconadryText: 'Wordle is a five-letter word guessing game with hints on letter positions',
+        seconadryText: 'Five-letter word guessing game with hints on letter positions.',
         image: WordleClone,
         functionality: [
             'Word validation',
@@ -146,7 +146,7 @@ export const projects = [
     },
     {
         title: 'E-commerce store',
-        seconadryText: 'Shop with electronics',
+        seconadryText: 'Shop with electronics. Supports stripe payments and easy management of store items.',
         image: eCommerce,
         functionality: [
             'Easy product management through Sanity.io',
