@@ -3,8 +3,8 @@ import briefCaseIcon from "../assets/images/briefcase.png"
 
 export const experiences = [
     {
-      title: "Web Developer - React",
-      secondaryText: "Junior",
+      title: "Junior Web Developer",
+      secondaryText: "T-Matic Grupa Computer Plus ",
       icon: briefCaseIcon,
       iconBg: "#ececec",
       work: true,
@@ -16,8 +16,8 @@ export const experiences = [
       ],
     },
     {
-      title: "Web Developer",
-      secondaryText: "Intern",
+      title: "Intern Web Developer",
+      secondaryText: "T-Matic Grupa Computer Plus",
       icon: briefCaseIcon,
       iconBg: "#ececec",
       work: true,
@@ -30,8 +30,8 @@ export const experiences = [
       ],
     },
     {
-      title: "Bialystok University of Technology",
-      secondaryText: "Bachelor's in Computer Science",
+      title: "Bachelor's in Computer Science",
+      secondaryText: "Bialystok University of Technology",
       icon: studentCapIcon,
       iconBg: "#ececec",
       date: "Oct 2019 - Feb 2023",
