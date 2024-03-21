@@ -10,8 +10,10 @@ import { contactH1 } from '../../constants/contact'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const [paragrafLetterClass, setParagrafLetterClass] = useState('paragraf-text-animate')
-    
+    const [paragrafLetterClass, setParagrafLetterClass] = useState(
+        'paragraf-text-animate'
+    )
+
     const refForm = useRef()
 
     useEffect(() => {
@@ -22,6 +24,14 @@ const Contact = () => {
         setTimeout(() => {
             setParagrafLetterClass('paragraf-text-animate-hover')
         }, 2900)
+
+        document
+            .getElementsByClassName('name')[0]
+            .setAttribute('style', 'visibility:hidden')
+        return () =>
+            document
+                .getElementsByClassName('name')[0]
+                .setAttribute('style', 'visibility:visible')
     }, [])
 
     const sendEmail = (e) => {
