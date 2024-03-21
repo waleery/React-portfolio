@@ -21,6 +21,7 @@ const Layout = () => {
                     <span className="bottom-tag-html">&lt;/html&gt;</span>
                 </span>
             </div>
+            <span className='name'>Patryk Walendziuk</span>
         </div>
     )
 }
