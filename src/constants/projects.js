@@ -5,6 +5,7 @@ import ATM_Console from "../assets/images/ATM_Console.png"
 import Achiveo from "../assets/images/Achiveo.png"
 import KanbanBoard from "../assets/images/KanbanBoard.png"
 import SelfDrivingCar from "../assets/images/Self-driving-car.png"
+import ReactHookComparision from "../assets/images/ReactHooksComparision.png"
 
 
 export const projectsH1 = "Projects"
@@ -126,6 +127,29 @@ export const projects = [
         ],
         gitHub:'https://github.com/waleery/KanbanBoard-zustand',
         liveDemo:'https://waleery.github.io/KanbanBoard-zustand/'
+    },
+    {
+        title: 'React Hooks',
+        seconadryText: 'An app showing React hooks with practical examples. Ideal for learning hook-based state management and side effects in React.',
+        image: ReactHookComparision,
+        functionality: [
+            'Responsive interface',
+            'useState',
+            'useEffect',
+            'useCallback',
+            'useRef', 
+            'useContext',
+            'useTransition',
+            'useDefferedvalue',
+            'useReducer',
+            'useLayoutEffect',
+            'useImperativeHandle',
+        ],
+        techStack: [
+            { technology: 'React', color: '#61DBFB', icon: '' },
+        ],
+        gitHub:'https://github.com/waleery/React-Hooks-Comparison',
+        liveDemo:'https://waleery.github.io/React-Hooks-Comparison/'
     },
     {
         title: 'Wordle Clone',
