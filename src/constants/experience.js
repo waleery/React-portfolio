@@ -2,6 +2,16 @@ import studentCapIcon from "../assets/images/student-cap.png"
 import briefCaseIcon from "../assets/images/briefcase.png"
 
 export const experiences = [
+    
+    {
+      title: "Junior React Native Developer",
+      secondaryText: "Rainbow",
+      icon: briefCaseIcon,
+      iconBg: "#ececec",
+      work: true,
+      date: "Now",
+      points: []
+    },
     {
       title: "Junior Web Developer",
       secondaryText: "T-Matic Grupa Computer Plus ",
